@@ -20,7 +20,7 @@
       options.texts               = options.hasOwnProperty('texts') ? options.texts : [];
       options.autoPlay            = options.hasOwnProperty('autoPlay') ? options.autoPlay : true;
       options.autoPlaySpeed       = options.hasOwnProperty('autoPlaySpeed') ? options.autoPlaySpeed : [10, 3];
-      options.fullScreen          = options.hasOwnProperty('fullScreen') ? options.fullScreen : true;
+      options.fullScreen          = options.hasOwnProperty('fullScreen') ? options.fullScreen : false;
       options.displaceScale       = options.hasOwnProperty('displaceScale') ? options.displaceScale : [200, 70];
       options.displacementImage   = options.hasOwnProperty('displacementImage') ? options.displacementImage : '';
       options.navElement          = options.hasOwnProperty('navElement')  ?  options.navElement : document.querySelectorAll( '.scene-nav' );
@@ -32,7 +32,6 @@
       options.textColor           = options.hasOwnProperty('textColor') ? options.textColor : '#fff';
       options.displacementCenter  = options.hasOwnProperty('displacementCenter') ? options.displacementCenter : false;
       options.dispatchPointerOver = options.hasOwnProperty('dispatchPointerOver') ? options.dispatchPointerOver : false;
-
 
 
       //  PIXI VARIABLES
@@ -79,23 +78,22 @@
         // Enable Interactions
         stage.interactive = true;
 
-        console.log(renderer.view.style);
-
         // Fit renderer to the screen
         if ( options.fullScreen === true ) {
+					console.log("fullScreen");
           renderer.view.style.objectFit = 'cover';
           renderer.view.style.width     = '100%';
           renderer.view.style.height    = '100%';
           renderer.view.style.top       = '50%';
           renderer.view.style.left      = '50%';
-          renderer.view.style.webkitTransform = 'translate( -50%, -50% ) scale(1.2)';
-          renderer.view.style.transform = 'translate( -50%, -50% ) scale(1.2)';
+          renderer.view.style.webkitTransform = 'translate( 0%, -100% ) scale(1.2)';
+          renderer.view.style.transform = 'translate( 0%, -100% ) scale(1.2)';
         } else {
           renderer.view.style.maxWidth  = '100%';
-          renderer.view.style.top       = '50%';
-          renderer.view.style.left      = '50%';
-          renderer.view.style.webkitTransform = 'translate( -50%, -50% )';
-          renderer.view.style.transform = 'translate( -50%, -50% )';
+					// renderer.view.style.top       = '50%';
+					// renderer.view.style.left      = '50%';
+          renderer.view.style.webkitTransform = 'translate(' + options.x + 'px' +  ' , ' + '-' + (options.screenHeight + options.y) + 'px' + ' )';
+          renderer.view.style.transform = 'translate(' + options.x + 'px' +  ' , ' + (-options.screenHeight + options.y) + 'px' + ' )';
         }
 
 
@@ -139,7 +137,6 @@
         var rTexts   = options.texts;
 
         for ( var i = 0; i < rSprites.length; i++ ) {
-					console.log(sprites);
           var texture   = new PIXI.Texture.fromImage( sprites[i] );
           var image     = new PIXI.Sprite( texture );
 

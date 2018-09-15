@@ -32,6 +32,41 @@
 		<img src="images/index/1_objects_5.png" class="hidden_img"></img>
 		<img src="images/index/1_objects_6.png" class="hidden_img"></img>
 		<img src="images/index/1_objects_7.png" class="hidden_img"></img>
+		<img src="images/index/1_objects_10.png" class="hidden_img"></img>
+		<img src="images/index/1_objects_11.png" class="hidden_img"></img>
+		<img src="images/index/1_objects.png" class="hidden_img"></img>
+		<img src="images/index/1_objects@2x_1.png" class="hidden_img"></img>
+		<img src="images/index/1_objects@2x_2.png" class="hidden_img"></img>
+		<img src="images/index/1_objects@2x_3.png" class="hidden_img"></img>
+		<img src="images/index/1_objects@2x_4.png" class="hidden_img"></img>
+		<img src="images/index/1_objects@2x_5.png" class="hidden_img"></img>
+		<img src="water/img/dmaps/2048x2048/clouds.jpg" class="hidden_img"></img>
+		<img src="images/1.png" class="hidden_img"></img>
+		<img src="images/BG@2x.jpg" class="hidden_img"></img>
+		<img src="images/bg01.png" class="hidden_img"></img>
+		<img src="images/bg02.png" class="hidden_img"></img>
+		<img src="images/bg03.png" class="hidden_img"></img>
+		<img src="images/Bitmap@2x.png" class="hidden_img"></img>
+		<img src="images/Bitmap@2x9.png" class="hidden_img"></img>
+		<img src="images/Group 2@2x01.png" class="hidden_img"></img>
+		<img src="images/Group 2@2x02.png" class="hidden_img"></img>
+		<img src="images/Group 2@2x03.png" class="hidden_img"></img>
+		<img src="images/Group 4@2x.png" class="hidden_img"></img>
+		<img src="images/Group 7@2x.png" class="hidden_img"></img>
+		<img src="images/Group@2x.png" class="hidden_img"></img>
+		<img src="images/Group@2x01.png" class="hidden_img"></img>
+		<img src="images/Group@2x02.png" class="hidden_img"></img>
+		<img src="images/Group@2x03.png" class="hidden_img"></img>
+		<img src="images/ic_clear@2x.png" class="hidden_img"></img>
+		<img src="images/Line.png" class="hidden_img"></img>
+		<img src="images/Line0.png" class="hidden_img"></img>
+		<img src="images/LOGO.png" class="hidden_img"></img>
+		<img src="images/Main@2x.png" class="hidden_img"></img>
+		<img src="images/Main@2x01.png" class="hidden_img"></img>
+		<img src="images/Menu-icon.png" class="hidden_img"></img>
+		<img src="images/Menu-icon@2x.png" class="hidden_img"></img>
+		<img src="images/Works-icon@2x.png" class="hidden_img"></img>
+
 	</div>
 </div>
 
@@ -43,6 +78,8 @@
 <script src= "https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script>
 <script>
   $(function() {
+		var imgs 	= document.querySelectorAll( '.hidden_img' );
+		console.log(imgs.length);
 		var total = 10;
 		var loaded = 0;
 		var progressFunction = function(progress){
@@ -79,7 +116,8 @@
 	    var result = image.isLoaded ? 'loaded' : 'broken';
 	    console.log( '加载结果 ' + result + ' 图片地址 ' + image.img.src );
 			loaded += 1;
-			controlBar.reach(loaded * 10);
+			var progress = loaded * 100/total;
+			controlBar.reach(progress);
 	  });
 
 
