@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>首页</title>
+  <link rel="stylesheet" type="text/css" href="progress/src/normalize.css">
+  <link rel="stylesheet" type="text/css" href="progress/style.css">
+  <link rel="stylesheet" type="text/css" href="progress/number-pb.css">
+  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="container" id="sample-pb">
+		<p class="progress-num" id="progress-num">0</p>
+		<img class="logo" src="progress/img/LOGO.png"></img>
+
+
+  <section id="sample-pb" class="sample-pb">
+		<div class="number-pb">
+			<div class="number-pb-shown"></div>
+			<div class="number-pb-num">0%</div>
+		</div>
+  </section>
+	<div id="hidden" class="hidden">
+		<img src="images/index/1_objects@2x.png" class="hidden_img"></img>
+		<img src="images/index/2_objects_1.png" class="hidden_img"></img>
+		<img src="images/index/2_objects.png" class="hidden_img"></img>
+		<img src="images/index/1_objects_1.png" class="hidden_img"></img>
+		<img src="images/index/1_objects_2.png" class="hidden_img"></img>
+		<img src="images/index/1_objects_3.png" class="hidden_img"></img>
+		<img src="images/index/1_objects_4.png" class="hidden_img"></img>
+		<img src="images/index/1_objects_5.png" class="hidden_img"></img>
+		<img src="images/index/1_objects_6.png" class="hidden_img"></img>
+		<img src="images/index/1_objects_7.png" class="hidden_img"></img>
+	</div>
+</div>
+
+
+
+<script src="progress/src/jquery.min.js"></script>
+<script src="progress/src/jquery.velocity.min.js"></script>
+<script src="progress/number-pb.js"></script>
+<script src= "https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script>
+<script>
+  $(function() {
+		var total = 10;
+		var loaded = 0;
+		var progressFunction = function(progress){
+			var num = Math.round(progress);
+			console.log(num);
+			if(num == 100){
+				window.location.href='home.html';
+				console.log("finish");
+			}else{
+				$('#progress-num').text(num);
+			}
+		}
+    var num = 100;
+    var title = $('#progress-num').text('0');
+    var controlBar = $('#sample-pb .number-pb').NumberProgressBar({
+      duration: 5000,
+      percentage: 0,
+			progressFunction : progressFunction
+    });
+		$('#hidden').imagesLoaded()
+	  	.always( function( instance ) {
+				console.log(instance);
+	    	console.log('图片已全部加载，或被确认加载失败');
+	  })
+	  .done( function( instance ) {
+			console.log(instance);
+	    console.log('图片全部加载成功');
+	  })
+	  .fail( function( instance ) {
+	    console.log('图片已全部加载，且至少一个图片加载失败');
+	  })
+	  .progress( function( instance, image ) {
+	    console.log('每张图片加载完' + loaded);
+	    var result = image.isLoaded ? 'loaded' : 'broken';
+	    console.log( '加载结果 ' + result + ' 图片地址 ' + image.img.src );
+			loaded += 1;
+			controlBar.reach(loaded * 10);
+	  });
+
+
+  });
+</script>
+</div>
+</body>
+</html>

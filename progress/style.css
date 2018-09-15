@@ -1,0 +1,58 @@
+/*
+  darkblue  : #176785;
+  bluegreen : #499989;
+  lightgreen: #BED194;
+  milk      : #FFD7AC;
+  red       : #FF534E;
+*/
+
+html {
+}
+
+
+.container {
+  width: 100%;
+	height : 100%;
+  text-align: center;
+	display: -webkit-box; /* Chrome 4+, Safari 3.1, iOS Safari 3.2+ */
+	display: -moz-box; /* Firefox 17- */
+	display: -webkit-flex; /* Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 */
+	display: -moz-flex; /* Firefox 18+ */
+	display: -ms-flexbox; /* IE 10 */
+	display: flex; /* Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ */
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #1B2030;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.logo-container{
+	background-color: white;
+}
+.hidden_img{
+	width: 0px;
+	height: 0px;
+	visibility: hidden;
+}
+.progress-num {
+	font-family: sans-serif;
+	font-size: 150px;
+	color:#24293a;
+	margin-bottom: 0;
+}
+.hidden{
+	visibility: hidden;
+}
+.logo{
+	width:69px;
+	height: 77px;
+	margin-top: -12vh;
+	margin-bottom: 12vh;
+}
+.sample-pb {
+	width: 60%;
+}

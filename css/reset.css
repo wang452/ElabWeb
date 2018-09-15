@@ -1,0 +1,82 @@
+@charset "utf-8";
+* {
+	-webkit-tap-highlight-color: transparent;
+	/**以下两行隐藏一些input控件本身样式及select箭头***/
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	/**以下3行解决webkit translation 闪烁问题**/
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 800;
+	-webkit-transform-style: preserve-3d;
+	/****注意这行会引起IOS下面文字发虚****/
+	/*字体平滑*/
+	-webkit-font-smoothing: antialiased;
+	/***输入框问题**/
+	/*-webkit-user-select:auto;*/
+}
+/*=========================Reset_start==========================*/
+body,h1,h2,h3,h4,h5,h6,div,p,dl,dt,dd,ol,ul,li,form,table,th,td,a,img,span,strong,var,em,input,textarea,select,option{margin: 0; padding: 0;}
+html,body{font-family:"宋体","微软雅黑",Arail,Tabhoma; font-size: 12px; text-align: left;}
+ul,ol{list-style: none;}
+img{border: 0;}
+input,select,textarea{outline:0;}
+button{
+    outline:none;
+    cursor: pointer;
+}
+textarea{resize:none;}
+table{border-collapse: collapse; border-spacing: 0;}
+th,strong,var,em{font-weight: normal; font-style: normal;}
+a{text-decoration: none;}
+/*a:link,a:visited,a:hover,a:active{text-decoration:none;} */
+/*==========================Reset_End===========================*/
+
+/*******font and base*********/
+@font-face {
+	font-family: "AritaHeiti";
+	src: url('../fonts/Arita-Heiti.ttf');
+}
+@font-face {
+	font-family: "AritaHeiti-Bold";
+	src: url('../fonts/AritaHeiti-Bold.ttf');
+}
+
+@font-face {
+	font-family: "AritaHeiti-Light";
+	src: url('../fonts/AritaHeiti-Light.ttf');
+}
+
+@font-face {
+	font-family: "DINCondensed";
+	src: url('../fonts/DIN Condensed Bold.ttf');
+}
+
+@font-face {
+	font-family: "DINCondensed";
+	src: url('../fonts/aven.ttf');
+}
+
+@font-face {
+	font-family: "FZDeSaiHei125S";
+	src: url('../fonts/FZDeSaiHei125S-R-GB.ttf');
+}
+
+@font-face {
+	font-family: "DINCond-Light.otf";
+	src: url('../fonts/DINCond-Light.otf');
+}
+
+@font-face {
+	font-family: "aven";
+	src: url('../fonts/aven.ttf');
+}
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
