@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="css/unslider.css"></link>
 	</head>
 
-	<body>
+	<body style="z-index : -1">
 
 		<div id="index" class="page">
 
@@ -95,7 +95,6 @@
 		<script src="js/unslider-min.js"></script>
 		<script src="js/jquery.event.move.js"></script>
 		<script src="js/jquery.event.swipe.js"></script>
-		<script src="water/js/demo.js"></script>
 		<script src="water/js/pixi.min.js"></script>
 		<script src="water/js/TweenMax.min.js"></script>
 		<script src="water/js/main.js"></script>
@@ -104,10 +103,13 @@
 
 				//show menu
 				$(".menu").on("click", function(e) {
+					initCanvasSlideshow.pause();
+					console.log($(".main-menu"));
 					$(".main-menu").addClass("active");
 				});
 				//close menu
 				$('.menu-close').on('click', function(e) {
+					initCanvasSlideshow.resume();
 					$(".main-menu").removeClass("active");
 				});
 
@@ -129,14 +131,15 @@
 				});
 
 			});
-			console.log($('.page')[0].clientWidth);
-			console.log($('.animation')[0].y);
+
 			var spriteImages 	= document.querySelectorAll( '.animation' );
+			console.log(spriteImages[0]);
 			var spriteImagesSrc = [];
 
 			for ( var i = 0; i < spriteImages.length; i++ ) {
 				var img = spriteImages[i];
 				spriteImagesSrc.push( img.getAttribute('src' ) );
+				img.style.visibility = "hidden";
 			}
 
 			var initCanvasSlideshow = new CanvasSlideshow({
@@ -144,7 +147,7 @@
 				displacementImage: 'water/img/dmaps/2048x2048/clouds.jpg',
 				autoPlay: true,
 				autoPlaySpeed: [10, 3],
-				displaceScale: [200, 70],
+				displaceScale: [100, 70],
 				stageWidth : $('.animation')[0].width,
 				stageHeight : $('.animation')[0].height,
 				x : $('.animation')[0].x,
@@ -152,6 +155,12 @@
 				screenWidth : $('.page')[0].clientWidth,
 				screenHeight : $('.page')[0].clientHeight
 			});
+			var index = 0;
+			setInterval(() => {
+				var newIndex = index + 1 >= spriteImages.length ? 0 : index + 1;
+				initCanvasSlideshow.moveSlider(newIndex);
+				index = newIndex;
+			}, 8000);
 			var mySlider;
 			window.onload = function() {
 

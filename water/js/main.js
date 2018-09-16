@@ -94,6 +94,7 @@
 					// renderer.view.style.left      = '50%';
           renderer.view.style.webkitTransform = 'translate(' + options.x + 'px' +  ' , ' + '-' + (options.screenHeight + options.y) + 'px' + ' )';
           renderer.view.style.transform = 'translate(' + options.x + 'px' +  ' , ' + (-options.screenHeight + options.y) + 'px' + ' )';
+					renderer.view.style.zIndex = -1;
         }
 
 
@@ -181,11 +182,22 @@
         ticker.autoStart = options.autoPlay;
 
         ticker.add(function( delta ) {
+					// if(!isPause){
+					// 	displacementSprite.x += options.autoPlaySpeed[0] * delta;
+					// 	displacementSprite.y += options.autoPlaySpeed[1];
+					//
+					// 	renderer.render( stage );
+					// }
+					if(!isPause){
+						renderer.view.style.opacity = 1;
+						displacementSprite.x += options.autoPlaySpeed[0] * delta;
+						displacementSprite.y += options.autoPlaySpeed[1];
+						renderer.render( stage );
+					}else{
+						renderer.view.style.opacity = 0;
+						renderer.render( stage );
+					}
 
-          displacementSprite.x += options.autoPlaySpeed[0] * delta;
-          displacementSprite.y += options.autoPlaySpeed[1];
-
-          renderer.render( stage );
 
         });
 
@@ -196,12 +208,24 @@
           render.autoStart = true;
 
           render.add(function( delta ) {
-            renderer.render( stage );
+						if(!isPause){
+							renderer.view.style.opacity = 1;
+							renderer.render( stage );
+						}else{
+							renderer.view.style.opacity = 0;
+							renderer.render( stage );
+						}
           });
 
       }
+			this.pause = function(){
+				isPause = true;
+			}
 
-
+			this.resume = function(){
+				isPause = false;
+			}
+			var isPause = false;
       /// ---------------------------
       //  TRANSITION BETWEEN SLIDES
       /// ---------------------------
