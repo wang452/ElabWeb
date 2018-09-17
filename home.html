@@ -12,17 +12,17 @@
 		<link rel="stylesheet" href="css/unslider.css"></link>
 	</head>
 
-	<body style="z-index : -1">
+	<body>
 
 		<div id="index" class="page">
 
 			<!--top menu-->
 			<div class="top-menu">
 				<div class="logo">
-					<a href="home.html"><img class="inner-icon" src="images/index/1_objects@2x_2.png" /></a>
+					<a href="index.html"><img class="inner-icon" src="images/index/1_objects@2x_2.png" /></a>
 				</div>
 				<div class="menu"><img class="inner-icon" src="images/index/1_objects@2x_3.png" /></div>
-				<div class="cases"><img class="inner-icon" src="images/index/1_objects@2x_4.png" /></div>
+				<div class="cases"><a href="projects.html"><img class="inner-icon" src="images/index/1_objects@2x_4.png" /></a></div>
 			</div>
 
 			<!--main menu-->
@@ -30,19 +30,19 @@
 				<div class="menu-close">X</div>
 				<ul class="menu-list">
 					<li>
-						<a href="#">我们是谁<small>WHO WE ARE</small></a>
+						<a href="licheng.html">我们是谁<small>WHO WE ARE</small></a>
 					</li>
 					<li>
-						<a href="#">我们在做什么?<small>WHAT WE DO</small></a>
+						<a href="do.html">我们在做什么<small>WHAT WE DO</small></a>
 					</li>
 					<li>
-						<a href="#">作品案例<small>PROJECTS</small></a>
+						<a href="projects.html">作品案例<small>PROJECTS</small></a>
 					</li>
 					<li>
-						<a href="#">加入我们<small>CAREERS</small></a>
+						<a href="careers.html">加入我们<small>CAREERS</small></a>
 					</li>
 					<li>
-						<a href="#">联系我们<small>CONTACTS</small></a>
+						<a href="contact.html">联系我们<small>CONTACTS</small></a>
 					</li>
 				</ul>
 			</div>
@@ -77,9 +77,9 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="who-we-are"><p>我们是谁</p><div class="slide-line"></div></div>
-			<div class="what-we-do"><p>我们在做什么?</p><div class="slide-line"></div></div>
+			
+			<div class="who-we-are"><p><a href="licheng.html">我们是谁</a></p><div class="slide-line"></div></div>
+			<div class="what-we-do"><p><a href="do.html">我们在做什么</a></p><div class="slide-line"></div></div>
 			<div id="leftWave" class="wave-bg"></div>
 			<div id="rightWave" class="wave-bg"></div>
 
@@ -104,7 +104,6 @@
 				//show menu
 				$(".menu").on("click", function(e) {
 					initCanvasSlideshow.pause();
-					console.log($(".main-menu"));
 					$(".main-menu").addClass("active");
 				});
 				//close menu
@@ -112,7 +111,7 @@
 					initCanvasSlideshow.resume();
 					$(".main-menu").removeClass("active");
 				});
-
+				
 				//hover style
 				$(".who-we-are").on('mouseover mouseout',function(e){
 					$(".footer .left,#leftWave").toggleClass("active");
@@ -125,9 +124,9 @@
 					$(".cases img").attr("src","images/index/1_objects@2x_5.png");
 				});
 				$(".what-we-do").on('mouseout',function(e){
-					setTimeout(function(){
+					//setTimeout(function(){
 						$(".cases img").attr("src","images/index/1_objects@2x_4.png");
-					},600);
+					//},600);
 				});
 
 			});
