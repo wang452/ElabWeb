@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>首页</title>
+  <title>ELAB</title>
   <link rel="stylesheet" type="text/css" href="progress/src/normalize.css">
   <link rel="stylesheet" type="text/css" href="progress/style.css">
   <link rel="stylesheet" type="text/css" href="progress/number-pb.css">
@@ -66,7 +66,48 @@
 		<img src="images/Menu-icon.png" class="hidden_img"></img>
 		<img src="images/Menu-icon@2x.png" class="hidden_img"></img>
 		<img src="images/Works-icon@2x.png" class="hidden_img"></img>
+		<img src="images/contact/1_objects@2x_1.png" class="hidden_img"></img>
+		<img src="images/contact/1_objects@2x_2.png" class="hidden_img"></img>
+		<img src="images/contact/1_objects@2x_3.png" class="hidden_img"></img>
+		<img src="images/contact/1_objects@2x_4.png" class="hidden_img"></img>
+		<img src="images/contact/1_objects@2x_5.png" class="hidden_img"></img>
+		<img src="images/contact/1_objects@2x_6.png" class="hidden_img"></img>
+		<img src="images/contact/1_objects@2x.png" class="hidden_img"></img>
 
+		<img src="images/join/1_objects@2x_1.png" class="hidden_img"></img>
+		<img src="images/join/1_objects@2x_2.png" class="hidden_img"></img>
+		<img src="images/join/1_objects@2x_3.png" class="hidden_img"></img>
+		<img src="images/join/1_objects@2x_4.png" class="hidden_img"></img>
+		<img src="images/join/1_objects@2x_5.png" class="hidden_img"></img>
+		<img src="images/join/1_objects@2x_6.png" class="hidden_img"></img>
+		<img src="images/join/1_objects@2x_7.png" class="hidden_img"></img>
+		<img src="images/join/1_objects@2x.png" class="hidden_img"></img>
+		<img src="images/join/2_objects@2x_1.png" class="hidden_img"></img>
+		<img src="images/join/2_objects@2x.png" class="hidden_img"></img>
+		<img src="images/join/3_objects@2x_1.png" class="hidden_img"></img>
+		<img src="images/join/3_objects@2x.png" class="hidden_img"></img>
+
+		<img src="images/do/1_objects@2x_1.png" class="hidden_img"></img>
+		<img src="images/do/1_objects@2x_2.png" class="hidden_img"></img>
+		<img src="images/do/1_objects@2x_3.png" class="hidden_img"></img>
+		<img src="images/do/1_objects@2x_4.png" class="hidden_img"></img>
+		<img src="images/do/1_objects@2x_5.png" class="hidden_img"></img>
+		<img src="images/do/1_objects@2x_6.png" class="hidden_img"></img>
+		<img src="images/do/1_objects@2x_7.png" class="hidden_img"></img>
+		<img src="images/do/1_objects@2x_8.png" class="hidden_img"></img>
+		<img src="images/do/1_objects@2x_9.png" class="hidden_img"></img>
+		<img src="images/do/1_objects@2x_10.png" class="hidden_img"></img>
+		<img src="images/do/1_objects@2x_11.png" class="hidden_img"></img>
+		<img src="images/do/1_objects@2x_12.png" class="hidden_img"></img>
+		<img src="images/do/1_objects@2x_13.png" class="hidden_img"></img>
+		<img src="images/do/1_objects@2x_14.png" class="hidden_img"></img>
+		<img src="images/do/1_objects@2x_15.png" class="hidden_img"></img>
+		<img src="images/do/1_objects@2x.png" class="hidden_img"></img>
+		<img src="images/do/2_objects@2x_1.png" class="hidden_img"></img>
+		<img src="images/do/2_objects@2x_2.png" class="hidden_img"></img>
+		<img src="images/do/2_objects@2x.png" class="hidden_img"></img>
+		<img src="images/do/3_objects@2x.png" class="hidden_img"></img>
+		<img src="images/do/4_objects@2x.png" class="hidden_img"></img>
 	</div>
 </div>
 
@@ -101,20 +142,13 @@
     });
 		$('#hidden').imagesLoaded()
 	  	.always( function( instance ) {
-				console.log(instance);
-	    	console.log('图片已全部加载，或被确认加载失败');
 	  })
 	  .done( function( instance ) {
-			console.log(instance);
-	    console.log('图片全部加载成功');
 	  })
 	  .fail( function( instance ) {
-	    console.log('图片已全部加载，且至少一个图片加载失败');
 	  })
 	  .progress( function( instance, image ) {
-	    console.log('每张图片加载完' + loaded);
 	    var result = image.isLoaded ? 'loaded' : 'broken';
-	    console.log( '加载结果 ' + result + ' 图片地址 ' + image.img.src );
 			loaded += 1;
 			var progress = loaded * 100/total;
 			controlBar.reach(progress);
