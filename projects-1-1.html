@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0,user-scalable=no'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+		<title>PROJECTS | ELAB</title>
+		<link rel="stylesheet" href="css/reset.css"></link>
+		<link rel="stylesheet" href="css/style.css"></link>
+	</head>
+
+	<body>
+
+		<div id="projects" class="page">
+
+			<!--main-->
+			<div id="projectDetail" class="project-list">
+				
+				<!--single item-->
+				<div class="project-item-detail">
+					<img class="inner-icon" src="images/projects/1_objects@2x_7.png" />
+					<div class="close-bar"></div>
+					<div class="item-desc item-inner"><span>未来人居1号作品</span></div>
+					<div class="item-title item-inner">重庆天空森林城市<p>Sky Forest City</p></div>
+					<div class="item-icon item-inner"><img src="images/projects/1_objects@2x_4.png" /></div>
+					<div class="item-link item-inner"><a href="projects-1-1.html">查看视频</a></div>
+				</div>
+				<!--/single item-->
+				
+			</div>
+
+		</div>
+
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script>
+			$(function() {
+
+				//show menu
+				$(".menu").on("click", function(e) {
+					$(".main-menu").addClass("active");
+				});
+				//close menu
+				$('.menu-close').on('click', function(e) {
+					$(".main-menu").removeClass("active");
+				});
+				
+				//close-bar click
+				$('.close-bar').on('click',function(e){
+				    window.history.go(-1);
+				});
+				
+			});
+
+		</script>
+
+	</body>
+
+</html>

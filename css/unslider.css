@@ -46,6 +46,7 @@
 }
 .unslider li {
 	text-align: center;
+	position: relative;
 }
 .unslider li img {
 	width: 100%;

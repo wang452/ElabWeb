@@ -33,7 +33,9 @@ body {
 	background: #4d9bbf;
 	padding-top: 20px;
 }
-
+.none{
+	display: none;
+}
 
 /****top menu****/
 
@@ -861,4 +863,191 @@ body {
 /******projects******/
 #projects{
 	background: #1B2030;
+	height: auto;
+}
+#projects .who-we-are,
+#projects .what-we-do{
+	top: 400px;
+}
+#projects .who-we-are a,
+#projects .what-we-do a {
+	color: #fff;
+}
+.project-list{
+	width: 92%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.project-item{
+	width: 100%;
+	margin-bottom: 30px;
+	position: relative;
+}
+.project-item .inner-icon{
+	width: 100%;
+	height: 340px;
+	object-fit: cover;
+}
+.item-inner{
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	left: 0;
+	z-index: 10;
+	font-weight: 700;
+}
+.item-desc{
+	top: 10%;
+}
+.item-desc span{
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #fff;
+	padding-left: 30px;
+}
+.item-title{
+	top: 40%;
+	font-size: 42px;
+	letter-spacing: 8px;
+}
+.item-title p{
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 2.46px;
+}
+.item-link{
+	bottom: 10%;
+}
+.item-link a{
+	font-size: 12px;
+	color: #202020;
+	line-height: 38px;
+	padding: 8px 30px;
+	background: #fff;
+	border-radius: 20px;
+}
+/**project -1**/
+.project-item-inner{
+	width: 100%;
+	margin-bottom: 30px;
+	position: relative;
+}
+.project-item-inner .inner-icon{
+	width: 100%;
+	height: 900px;
+	object-fit: cover;
+}
+.project-item-inner .close-bar{
+	position: absolute;
+	left: 0;
+	top: 1%;
+	z-index: 10;
+	background: url(../images/projects/1_objects@2x_3.png) no-repeat 50% 50%;
+	background-size: contain;
+    transition: all linear 0.5s;
+}
+.close-bar:hover{
+	transform: rotate(90deg);
+}
+.project-item-inner .item-title{
+	top: 30%;
+}
+.project-item-inner .item-link a{
+	font-size: 18px;
+	color: #fff;
+	line-height: 38px;
+	padding: 8px 40px;
+	background: #3facbf;
+	border-radius: 20px;
+	margin: 0px 20px;
+}
+
+/****project detail****/
+#projectDetail{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	background: #fff;
+}
+.project-item-detail{
+	width: 100%;
+	margin-bottom: 0;
+	position: relative;
+}
+.project-item-detail .inner-icon{
+	width: 100%;
+	height: 800px;
+	object-fit: cover;
+}
+.project-item-detail .close-bar{
+	position: absolute;
+	left: 0;
+	top: 1%;
+	z-index: 10;
+	background: url(../images/projects/1_objects@2x_3.png) no-repeat 50% 50%;
+	background-size: contain;
+    transition: all linear 0.5s;
+}
+.project-item-detail .item-desc{
+	top: 22%;
+}
+.project-item-detail .item-desc span{
+	letter-spacing: 90px;
+	padding-left: 90px;
+	border-bottom: none;
+}
+.project-item-detail .item-title{
+	font-size: 92px;
+	top: 36%;
+}
+.project-item-detail .item-title p{
+	letter-spacing: 32.4px;
+	font-size: 26px;
+}
+.project-item-detail .item-link{
+	bottom: 6%;
+}
+.project-item-detail .item-link a{
+	font-size: 18px;
+	color: #fff;
+	line-height: 38px;
+	padding: 8px 40px;
+	background: #3facbf;
+	border-radius: 20px;
+	margin: 0px 20px;
+}
+.project-item-detail .item-icon{
+	width: 100%;
+	left: 0;
+	top: 68%;
+	z-index: 10;
+	text-align: center;
+}
+.project-item-detail .item-icon img{
+	width: 2%;
+}
+/*****small*****/
+@media only screen and (max-width: 667px) and (-webkit-min-device-pixel-ratio:2) {
+	.item-desc span{
+		letter-spacing: 20px;
+		padding-left: 20px;
+	}
+	.project-list{
+		margin-bottom: 0;
+	}
+	.project-item-inner{
+		margin-bottom: 15px;
+	}
+	.small-line{
+		display: block;
+		width: 100%;
+		height: 30px;
+		background: none;
+		font-size: 0;
+	}
 }
