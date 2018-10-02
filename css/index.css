@@ -383,10 +383,10 @@ body {
 	text-align: center;
 }
 .progressFirst{
-	margin-top: -50px;
+	/*margin-top: -50px;*/
 }
 .progressSecond{
-	margin-top: -50px;
+	/*margin-top: -50px;*/
 }
 .p_fir {
 	margin-right: 4%;
@@ -397,7 +397,7 @@ body {
 
 .progress>p {
 	display: inline-block;
-	width: 44%;
+	width: 100%;
 	height: 178px;
 	padding: 33px 30px;
 	overflow: hidden;
