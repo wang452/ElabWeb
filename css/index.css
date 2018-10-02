@@ -1048,8 +1048,11 @@ body {
 	}
 	.h33 {
 		font-size: .36rem;
-		top: 0.82rem;
+		top: 0.2rem;
 		right: 0.56rem;
+	}
+	.work {
+		top: 0.96rem;
 	}
 	.n {
 		font-size: .7rem;

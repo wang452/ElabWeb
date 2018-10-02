@@ -171,8 +171,7 @@
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
-
-    setInterval(function () {
+    var mock = setInterval(function () {
         var mock = mockloaded();
         $("#progress-num").text(mock);
         $(".number-pb-shown").css("width", "" + mock + "%");
@@ -204,6 +203,7 @@
                 $(".number-pb-shown").css("width", "" + percent + "%");
                 // controlBar.reach(100);
                 //加载完毕，关闭loading
+                clearInterval(mock);
                 parent.hideLoading();
             }
         }
