@@ -43,10 +43,16 @@
 				text-align: center;
 			}
 
-			.hj_box .more {
+			.hj_box .more1 {
 				position: absolute;
 				z-index: 30;
-				left: calc( ( 100% - 154px) / 2);
+				left: calc( ( 100% - 354px) / 2);
+				top: 70%;
+			}
+            .hj_box .more2 {
+				position: absolute;
+				z-index: 30;
+				left: calc( ( 100% + 84px) / 2);
 				top: 70%;
 			}
 			body {
@@ -286,12 +292,16 @@
 					</ul>
 				</div>
                 <p>&nbsp;</p>
-				<a href="javascript:showTimeMore();" class="more wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">查看更多</a>
+				<a href="javascript:showTimeMore();" id='btnShowTimeMore' class="more wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">查看更多</a>
 			    <p>&nbsp;</p>
 			</div>
 
 			<div class="section5">
 				<div class="wrap hj_box">
+                    <div class="a_btn clearfix">
+                        <a href="javascript:subShowJoin();" class="more1 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">加入我们</a>
+                        <a href="#" class="more2 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">查看视频</a>
+                    </div>
 					<div class="slider">
 						<ul>
 							<li><img src="images/slider/1.jpg" />
@@ -312,7 +322,7 @@
 								<h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s"></h3></li>
 						</ul>
 					</div>
-					<a href="javascript:subShowJoin();" class="more wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">加入我们</a>
+
 				</div>
 			</div>
 		</div>
@@ -466,9 +476,9 @@
 
 			var $_class = $(".hideTimeLine").attr('class');
 			if($_class.indexOf("show")>-1){
-				$(".more").text("查看更多");
+				$("#btnShowTimeMore").text("查看更多");
 			}else{
-				$(".more").text("返 回");
+				$("#btnShowTimeMore").text("返 回");
 			}
 			$(".hideTimeLine").toggleClass("show").slideToggle(2000);
 
