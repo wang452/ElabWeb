@@ -15,7 +15,6 @@
 			.page {
 				opacity: 0;
 			}
-			
 			.top-menu {
 				background: none;
 			}
@@ -44,6 +43,8 @@
 			<!--main menu-->
 			<div class="main-menu" data-wow-duration="1s" data-wow-delay="2s">
 				<div class="menu-close"></div>
+				<div id="water1"></div>
+				<div id="water2"></div>
 				<ul class="menu-list">
 					<li>
 						<a href="javascript:showWho();">我们是谁<small>WHO WE ARE</small></a>
@@ -178,10 +179,8 @@
 		<script src="js/unslider-min.js"></script>
 		<script src="js/jquery.event.move.js"></script>
 		<script src="js/jquery.event.swipe.js"></script>
-		<!--<script src="water/js/pixi.min.js"></script>
-		<script src="water/js/TweenMax.min.js"></script>
-		<script src="water/js/main.js"></script>-->
 		<script src="js/wow.js"></script>
+
 		<script>
 			//绑定前进后退事件
 			var $_cpage = "index"; //当前页面
@@ -449,7 +448,7 @@
 			}
 			//close contacts
 			function closeContact() {
-				$(".contactLayer").fadeOut(500);
+				$(".contactLayer").fadeOut(1000);
 			}
 
 			//show contacts
@@ -465,7 +464,7 @@
 			}
 			//close contacts
 			function closeCareers() {
-				$(".careersLayer").fadeOut(500);
+				$(".careersLayer").fadeOut(1000);
 			}
 
 			//show Projects
@@ -481,19 +480,19 @@
 			}
 			//close contacts
 			function closeProjects() {
-				$(".projectsLayer").fadeOut(500);
+				$(".projectsLayer").fadeOut(1000);
 			}
 			//close sub layer and show projects
 			function closeAndShowPro(str) {
 				console.log(str);
-				$("." + str + "").fadeOut(500);
+				$("." + str + "").fadeOut(1000);
 				setTimeout(function() {
 					showProjects();
 				}, 500);
 			}
 			//close sub layer and show careers
 			function closeAndShowCareers() {
-				$(".whoWeAre").fadeOut(500);
+				$(".whoWeAre").fadeOut(1000);
 				setTimeout(function() {
 					$(".whoWeAre").removeClass("in");
 					showCareers();

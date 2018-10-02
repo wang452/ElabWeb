@@ -18,6 +18,11 @@
 			window['adaptive'].init();
 		</script>
 		<style type="text/css">
+			.hideTimeLine{
+				width: 100%;
+				display: none;
+			}
+			
 			.hj_box {
 				position: relative;
 			}
@@ -41,8 +46,34 @@
 			.hj_box .more {
 				position: absolute;
 				z-index: 30;
-				left: calc( ( 100% - 154px ) / 2 );
+				left: calc( ( 100% - 154px) / 2);
 				top: 70%;
+			}
+			body {
+				background: #1e2538;
+			}
+			
+			.section4_list {
+				width: 100%;
+				max-width: 1440px;
+				margin: 0 auto;
+			}
+
+			/***middle**/
+			@media only screen and (max-width: 1280px) {
+				.progress>p.p_fir1 span {
+					width: 358px;
+				}
+			}
+			
+			.section4_list li .section4_list_box {
+				transition: all ease 0.5s;
+				padding-top: 20px;
+				cursor: pointer;
+			}
+			
+			.section4_list li:hover .section4_list_box {
+				transform: translateY(-10px);
 			}
 		</style>
 	</head>
@@ -125,12 +156,12 @@
 					</li>
 				</ul>
 			</div>
-			<div class="section4">
+			<div id="section4" class="section4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
 				<ul class="section4_list">
-					<li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+					<li>
 						<div class="section4_list_box">
-							<h3 class="h3 latest">20<br />18</h3>
-							<p class="p p1">NOW-B轮进行中</p>
+							<h3 class="h3 latest wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">20<br />18</h3>
+							<p class="p p1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">NOW-B轮进行中</p>
 						</div>
 					</li>
 					<li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
@@ -139,36 +170,139 @@
 							<p class="p">大麦SaaS智能营销系列产品-E看房APP上线</p>
 						</div>
 					</li>
-					<li class="sec wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+					<li class="sec wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
 						<div class="section4_list_box">
 							<h3 class="h3 tag">06</h3>
-							<p class="p">大麦SaaS智能营销系列产品-E看房APP上线</p>
+							<p class="p">大麦SaaS智能营销系列产品-WIII云案场，正式上线</p>
 						</div>
 					</li>
-					<li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+					<li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.5s">
 						<div class="section4_list_box">
 							<h3 class="h3 tag">05</h3>
-							<p class="p">大麦SaaS智能营销系列产品——WILL APP,正式上线</p>
+							<p class="p">大麦SaaS智能营销系列产品——WIII APP,正式上线</p>
 							<p class="p">大麦SaaS智能营销系列产品——投放宝,正式上线</p>
 						</div>
 					</li>
-					<li>
-						<a href="javascript:linkToInner('more.html');" class="more wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">查看更多</a>
-					</li>
 				</ul>
+				<div class="hideTimeLine">
+					<ul class="section4_list section4_list01">
+						<li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+							<div class="section4_list_box">
+								<h3 class="h3 latest">20<br />17</h3>
+								<!--<p class="p p1 p1-1">NOW-B轮进行中</p>-->
+							</div>
+						</li>
+						<li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+							<div class="section4_list_box">
+								<h3 class="h3 tag">12</h3>
+								<p class="p">大麦SAAS智能营销产品实践落地天空森林城市项目，产品帮助开发商充分溢价及销售，实现重庆</p>
+								<p class="p">住宅毛坯单价第一，总销售额27亿+。同时大幅提升企业利润率，缩短项目销售周期。</p>
+							</div>
+						</li>
+						<li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+							<div class="section4_list_box" style="padding-left: 0;">
+								<h3 class="h3 tag">11</h3>
+								<p class="p">与路劲集团形成战略合作</p>
+							</div>
+						</li>
+						<li class="sec wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+							<div class="section4_list_box">
+								<h3 class="h3 tag">07</h3>
+								<p class="p">与深业集团形成战略合作</p>
+							</div>
+						</li>
+						<li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+							<div class="section4_list_box" style="padding-left: 0;">
+								<h3 class="h3 tag">02</h3>
+								<p class="p">入驻大宁德必易园新办公地点</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="section4_list">
+						<li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+							<div class="section4_list_box">
+								<h3 class="h3 latest">20<br />16</h3>
+								<!--<p class="p p1">NOW-B轮进行中</p>-->
+							</div>
+						</li>
+						<li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+							<div class="section4_list_box">
+								<h3 class="h3 tag">12</h3>
+								<p class="p">大麦SAAS智能营销系列产品-天空森林城市APP，正式上线</p>
+							</div>
+						</li>
+						<li class="sec wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+							<div class="section4_list_box">
+								<h3 class="h3 tag">09</h3>
+								<p class="p">与易居中国、城视窗联合举办北京国际设计周-全球未来人居创新大会，本次大会邀请了全球100位建筑师进行作品中国首秀。</p>
+							</div>
+						</li>
+						<li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+							<div class="section4_list_box">
+								<h3 class="h3 tag">05</h3>
+								<p class="p">完成A+轮融资，以3.3亿估值，再获数千万融资额。</p>
+								<p class="p">战略投资方：顺为资本/唯品基金</p>
+							</div>
+						</li>
+					</ul>
+					<ul class="section4_list section4_list01">
+						<li class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+							<div class="section4_list_box">
+								<h3 class="h3 latest">20<br />15</h3>
+								<!--<p class="p p1 p1-1">NOW-B轮进行中</p>-->
+							</div>
+						</li>
+						<li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+							<div class="section4_list_box">
+								<h3 class="h3 tag">10</h3>
+								<p class="p">完成A轮融资，以1.5亿估值，获得数千万融资额。战略投资方：顺为资本/唯品基金</p>
+								<p class="p">未来人居1号作品-天空森林城市项目落地重庆</p>
+							</div>
+						</li>
+						<li class="sec wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+							<div class="section4_list_box">
+								<h3 class="h3 tag">07</h3>
+								<p class="p">公司成立，入驻宏慧音悦湾办公空间。</p>
+							</div>
+						</li>
+					</ul>
+					<div class="progress">
+						<img src="http://yun-image.elab-plus.com/images/Line.png" alt="" class="Line wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+						<p class="p_fir wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+							<img src="http://yun-image.elab-plus.com/images/Bitmap@2x.png" alt="" class="shun">
+							<span class="fl">顺为资本由雷军和许达来先生联合创立，重点关注互联网，高科技行业以及互联网与传统行业结合所带来的变革。已主导投资了超百家创业公司。</span>
+						</p>
+						<p class="p_fir p_fir1 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s" style="">
+							<img src="http://yun-image.elab-plus.com/images/Bitmap@2x9.png" alt="" class="wph">
+							<span class="fl">唯品会信息科技有限公司（VIPS）成立于2008年8月，2012年在美国纽约证券交易所（NYSE）上市。目前已成为中国第三大电商。</span>
+						</p>
+					</div>
+				</div>
+                <p>&nbsp;</p>
+				<a href="javascript:showTimeMore();" class="more wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">查看更多</a>
+			    <p>&nbsp;</p>
 			</div>
+
 			<div class="section5">
 				<div class="wrap hj_box">
 					<div class="slider">
 						<ul>
-							<li><img src="images/slider/1.jpg" /><h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片1</h3></li>
-							<li><img src="images/slider/2.jpg" /><h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片2</h3></li>
-							<li><img src="images/slider/3.jpg" /><h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片3</h3></li>
-							<li><img src="images/slider/4.jpg" /><h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片4</h3></li>
-							<li><img src="images/slider/5.jpg" /><h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片5</h3></li>
-							<li><img src="images/slider/7.jpg" /><h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片6</h3></li>
-							<li><img src="images/slider/8.jpg" /><h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片7</h3></li>
-							<li><img src="images/slider/9.jpg" /><h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片8</h3></li>
+							<li><img src="images/slider/1.jpg" />
+								<h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片1</h3></li>
+							<li><img src="images/slider/2.jpg" />
+								<h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片2</h3></li>
+							<li><img src="images/slider/3.jpg" />
+								<h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片3</h3></li>
+							<li><img src="images/slider/4.jpg" />
+								<h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片4</h3></li>
+							<li><img src="images/slider/5.jpg" />
+								<h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片5</h3></li>
+							<li><img src="images/slider/7.jpg" />
+								<h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片6</h3></li>
+							<li><img src="images/slider/8.jpg" />
+								<h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片7</h3></li>
+							<li><img src="images/slider/9.jpg" />
+								<h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片8</h3></li>
 						</ul>
 					</div>
 					<a href="javascript:subShowJoin();" class="more wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">加入我们</a>
@@ -242,17 +376,23 @@
 		}
 
 		function subShowJoin() {
-			parent.showIndex();
-			setTimeout(function(){
-				parent.showCareers();
-			},1000);
+			parent.showCareers();
+		}
+
+		function innerShowPro() {
+			parent.showProjects();
 		}
 		
-		function innerShowPro(){
-			parent.showIndex();
-			setTimeout(function(){
-				parent.showProjects();
-			},1000);
+		function showTimeMore(){
+			
+			var $_class = $(".hideTimeLine").attr('class');
+			if($_class.indexOf("show")>-1){
+				$(".more").text("查看更多");
+			}else{
+				$(".more").text("返 回");
+			}
+			$(".hideTimeLine").toggleClass("show").slideToggle(2000);
+			
 		}
 
 		function linkToInner(url) {

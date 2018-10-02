@@ -36,7 +36,12 @@ a{text-decoration: none;}
 	font-family: "AritaHeiti";
 	/*src: url('../fonts/Arita-Heiti.ttf');*/
 	src: url('http://yun-image.elab-plus.com/font/Arita-Heiti.ttf');
-}/*
+}
+@font-face {
+	font-family: "DINCond";
+	src: url('../fonts/DINCond-Light.otf');
+}
+/*
 @font-face {
 	font-family: "AritaHeiti-Bold";
 	src: url('../fonts/AritaHeiti-Bold.ttf');

@@ -139,7 +139,7 @@ body {
 	background: #34B5CB;
 	transform: translateY(-100%);
 	opacity: 0;
-	transition: all ease 0.8s
+	transition: all ease 1s
 }
 
 .main-menu.active {
@@ -159,6 +159,8 @@ body {
 	background-size: contain;
 	transition: all ease 1s;
 	transform: rotate(0);
+	position: relative;
+    z-index: 10;
 }
 .menu-close:hover{
 	transform: rotate(360deg);
@@ -1386,8 +1388,8 @@ body {
 	font-weight: 300;
 }
 #parts3 .inner-icon{
-	height: auto;
-	max-height: 1024px;
+	/*height: auto;*/
+	height: 1024px;
 	z-index: 1;
 }
 .inner-mask{
@@ -1473,9 +1475,8 @@ body {
 }
 /******parts4**/
 #parts4 .inner-icon{
-	height: auto;
 	position: relative;
-	max-height: 1024px;
+	height: 1024px;
 	object-position: 10%;
 }
 .part-icon{
@@ -1915,6 +1916,55 @@ body {
     }
 }
 
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+	.who-we-are,
+	.what-we-do{
+		display: none;
+	}
+	.img2{
+		top: auto;
+		bottom: 15%;
+	}
+	#do1 .words1{
+		font-size: 60px;
+	}
+	#do1 .words1 span{
+		letter-spacing: 0px;
+	}
+	#do1 .words1 strong{
+		margin-top: 40px;
+		margin-bottom: 10px;
+	}
+	#do1 .words2{
+		width: 50%;
+		font-size: 20px;
+	}
+	#do2 .words1, #do4 .words1 {
+    position: absolute;
+    z-index: 5;
+    width: 90%;
+    left: 5%;
+    top: 30%;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 14px;
+    padding-left: 14px;
+}
+    #do3 .words1,#do5 .words1{
+    	font-size: 23px;
+    	top: 32%;
+    }
+    #do3 .words2{
+    	font-size: 17px;
+    	top: 30%;
+    }
+    #do5 .words2{
+    	font-size: 17px;
+    	top: 33%;
+    }
+}
+
 
 /******do detail******/
 #doDetail .project-item-detail .inner-icon{
@@ -1940,6 +1990,7 @@ body {
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 180%;
+	vertical-align: top;
 }
 .future-icon{
 	width: 42px;
@@ -2264,6 +2315,8 @@ body {
     #parts10 .words2{
     	font-size: 16px;
     	margin-left: 1%;
+    	margin-left: -6%;
+    	margin-top: 5%;
     }
     /*#parts8 .words2 strong,
     #parts10 .words2 strong{
@@ -2277,14 +2330,14 @@ body {
     	line-height: 120%;
     }
     #parts10 .words2 strong{
-    	top: -66%;
+    	top: -88%;
     }
     #parts9 #innerItem1,#parts9 #innerItem3{
     	width: 46%;
     }
     .inner-item div{
     	display: block;
-    	font-size: 5vw;
+    	font-size: 4vw;
     }
     .inner-item small{
     	font-size: 3vw;
@@ -2292,7 +2345,7 @@ body {
     .inner-box{
     	width: 80%;
     	left: 10%;
-    	top: 43%;
+    	top: 37%;
     }
     .box-item{
     	font-size: 6vw;
@@ -2306,7 +2359,7 @@ body {
     #innerItem2 div:nth-child(2){
     	position: absolute;
     	right: 0;
-    	top: -61%;
+    	top: -41%;
     }
     #innerItem4{
     	width: 43%;
@@ -2407,7 +2460,7 @@ body {
 #innerBg1{
 	display: block;
 }
-innerBg2{
+.innerBg2{
 	display: none;
 }
 #parts13 .words1{
@@ -2889,5 +2942,355 @@ innerBg2{
     }
     .line2 .trade{
     	padding-right: 9%;
+    }
+}
+
+@keyframes waterCircle {
+    0% {
+        transform: scale(0,0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(2.5,2.5);
+        opacity: 1;
+    }
+}
+@keyframes top_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+    25% {
+        transform: translateX(-30%) translateZ(0) scaleY(0.9);
+    }
+    50% {
+        transform: translateX(-60%) translateZ(0) scaleY(1);
+    }
+    75% {
+        transform: translateX(-30%) translateZ(0) scaleY(0.9);
+    }
+    100% {
+        transform: translateX(0) translateZ(0) scaleY(1);
+    }
+}
+
+#parts4{
+	height: 1024px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.number-line{
+		width: 80%;
+		margin: 10% auto 0 10%;
+	}
+	.number-box{
+		font-size: 300px;
+		width: 50%;
+	}
+	.line1 .number-box:nth-child(1){
+		width: 50%;
+	}
+	.line1 .w-right{
+		font-size: 40px;
+        padding-right: 40%;
+        margin-top: -27%;
+	}
+	.line1 .w-left{
+		font-size: 30px;
+	}
+	.line1 .month{
+		padding-right: 57%;
+	}
+	.line1 .circle{
+		padding-left: 5%;
+	}
+	.line2{
+		margin-top: 10%;
+	}
+	.line2 .percent {
+        left: 60%;
+        font-size: 6vw;
+        top: 13%;
+    }
+    .line2 .p2{
+    	left: 67%;
+    }
+    .line2 .w-right{
+    	font-size: 30px;
+    	margin-top: -13%;
+    	padding-right: 15%;
+    }
+    .line2 .trade{
+    	padding-right: 5%;
+    	margin-top: -11%;
+    }
+    #parts4 .inner-icon{
+	    position: relative;
+	    height: 1024px;
+	    object-position: contain;
+	    object-position: 50%;
+    }
+    #parts4 .title{
+    	font-size: 40px;
+    }
+    #parts4 .desc{
+    	width: 80%;
+    	left: 10%;
+    	text-align: center;
+    	font-size: 30px;
+    }
+    #parts5 .words2{
+    	width: 40%;
+    }
+    .project-name{
+    	width: 50%;
+    	text-align: left;
+    }
+    .project-qrcode{
+    	width: 15%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+	.number-line{
+		width: 80%;
+		margin: 10% auto 0 10%;
+	}
+	.number-box{
+		font-size: 300px;
+		width: 50%;
+	}
+	.line1 .number-box:nth-child(1){
+		width: 50%;
+	}
+	.line1 .w-right{
+		font-size: 40px;
+        padding-right: 20%;
+        margin-top: -32%;
+	}
+	.line1 .w-left{
+		font-size: 30px;
+	}
+	.line1 .month{
+		padding-right: 57%;
+	}
+	.line1 .circle{
+		padding-left: 5%;
+	}
+	.line2{
+		margin-top: 10%;
+	}
+	.line2 .percent {
+        left: 77%;
+        font-size: 6vw;
+        top: 13%;
+    }
+    .line2 .p2{
+    	left: 89%;
+    }
+    .line2 .w-right{
+    	font-size: 30px;
+    	margin-top: -13%;
+    	padding-right: 15%;
+    }
+    .line2 .trade{
+    	padding-right: 5%;
+    	margin-top: -11%;
+    }
+    #parts4 .inner-icon{
+	    position: relative;
+	    height: 1024px;
+	    object-position: contain;
+	    object-position: 50%;
+    }
+    #parts4 .title{
+    	font-size: 42px;
+    }
+    #parts4 .desc{
+    	width: 80%;
+    	left: 10%;
+    	text-align: left;
+    	font-size: 30px;
+    }
+    #parts5 .words1{
+    	width: 90%;
+    	left: 5%;
+    	font-size: 20px;
+    }
+    #parts5 .words1 p{
+    	font-size: 14px;
+    }
+    #parts5 .words2{
+    	width: 90%;
+    	left: 5%;
+    	font-size: 16px;
+    	text-align: justify;
+    	line-height: 180%;
+    	top: 20%;
+    }
+    #parts5 .inner-icon{
+    	height: 597px;
+    	object-fit: cover;
+    	object-position: 70% 100%;
+    }
+    #parts6 .words1{
+    	left: 5%;
+    	top: 15%;
+    	width: 67%;
+    	font-size: 7vw;
+    }
+    #parts6 .words1 p{
+    	font-size: 3vw;
+    }
+    #parts6 .words1 p.about{
+    	font-size: 3vw;
+    	line-height: 180%;
+    }
+    .dm-app {
+        width: 50%;
+        top: 15%;
+        right: -25%;
+    }
+    .project-name{
+    	width: 50%;
+    	top: 15%;
+    	text-align: left;
+    	font-size: 5vw;
+    	line-height: 150%;
+    }
+    .project-name p{
+    	font-size: 3vw;
+    	letter-spacing: 2px;
+    }
+    #parts7{
+    	height: 200px;
+    }
+    .project-qrcode{
+    	width: 30%;
+    }
+    .project-qrcode p{
+    	display: none;
+    }
+}
+
+
+@media only screen and (max-width: 667px) and (-webkit-min-device-pixel-ratio:2) {
+	.number-line{
+		width: 80%;
+		margin: 70% auto 0 10%;
+	}
+	.number-box{
+		font-size: 120px;
+		width: 50%;
+	}
+	.line1 .number-box:nth-child(1){
+		width: 50%;
+	}
+	.line1 .w-right{
+		font-size: 20px;
+        padding-right: 28%;
+        margin-top: -32%;
+	}
+	.line1 .w-left{
+		font-size: 16px;
+	}
+	.line1 .month{
+		padding-right: 60%;
+	}
+	.line1 .circle{
+		padding-left: 5%;
+	}
+	.line2{
+		margin-top: 30%;
+	}
+	.line2 .percent {
+        left: 65%;
+        font-size: 8vw;
+        top: 7%;
+    }
+    .line2 .p2{
+    	left: 75%;
+    }
+    .line2 .w-right{
+    	font-size: 16px;
+    	margin-top: -13%;
+    	padding-right: 15%;
+    }
+    .line2 .trade{
+    	padding-right: 5%;
+    	margin-top: -11%;
+    }
+    #parts4 .inner-icon{
+	    position: relative;
+	    height: 1024px;
+	    object-position: contain;
+	    object-position: 50%;
+    }
+    #parts4 .title{
+    	font-size: 24px;
+    }
+    #parts4 .desc{
+    	width: 84%;
+    	left: 8%;
+    	text-align: justify;
+    	font-size: 24px;
+    }
+    #parts5 .words1{
+    	width: 90%;
+    	left: 5%;
+    	font-size: 20px;
+    }
+    #parts5 .words1 p{
+    	font-size: 14px;
+    }
+    #parts5 .words2{
+    	width: 90%;
+    	left: 5%;
+    	font-size: 16px;
+    	text-align: justify;
+    	line-height: 180%;
+    	top: 20%;
+    }
+    #parts5 .inner-icon{
+    	height: 597px;
+    	object-fit: cover;
+    	object-position: 70% 100%;
+    }
+    #parts6 .words1{
+    	left: 5%;
+    	top: 25%;
+    	width: 67%;
+    	font-size: 7vw;
+    }
+    #parts6 .words1 p{
+    	font-size: 3vw;
+    }
+    #parts6 .words1 p.about{
+    	font-size: 3vw;
+    	line-height: 180%;
+    }
+    .dm-app {
+        width: 50%;
+        top: 25%;
+        right: -25%;
+    }
+    .project-name{
+    	width: 50%;
+    	top: 15%;
+    	text-align: left;
+    	font-size: 5vw;
+    	line-height: 150%;
+    }
+    .project-name p{
+    	font-size: 3vw;
+    	letter-spacing: 2px;
+    }
+    #parts7{
+    	height: 200px;
+    }
+    .project-qrcode{
+    	width: 30%;
+    }
+    .project-qrcode p{
+    	display: none;
     }
 }
