@@ -569,6 +569,14 @@ body {
 /*****main for who we are****/
 .pageLayer{
 	z-index: 200;
+	-webkit-overflow-scrolling: touch;
+	overflow-y: scroll;
+}
+.scroll-wrapper {
+	-webkit-overflow-scrolling: touch;
+	overflow-y: scroll;
+
+	/* important:  dimensions or positioning here! */
 }
 .whoWeAre{
 	width: 100%;

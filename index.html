@@ -134,15 +134,15 @@
 		</div>
 
 		<!--who we are-->
-		<div class="whoWeAre pageLayer">
-			<div class="black-mask"></div>
+		<div class="whoWeAre pageLayer" hidden>
+			<div class="black-mask" ></div>
 			<iframe name="frameWho" src="licheng.html" width="100%" height="100%" scrolling="yes" frameborder="0"></iframe>
 		</div>
 		<!--/who we are-->
 
 		<!--what we do-->
-		<div class="whatWeDo pageLayer">
-			<div class="black-mask"></div>
+		<div class="whatWeDo pageLayer" hidden>
+			<div class="black-mask" ></div>
 			<iframe name="frameDo" src="do.html" width="100%" height="100%" scrolling="yes" frameborder="0"></iframe>
 		</div>
 		<!--/what we do-->
@@ -167,13 +167,13 @@
 
 		<!--project list-->
 		<div class="listLayer pageLayer">
-			<iframe name="frameList" id="frameList" src="" width="100%" height="100%" scrolling="yes" frameborder="0"></iframe>
+			<iframe name="frameList" id="frameList" src="projects-1.html" width="100%" height="100%" scrolling="yes" frameborder="0"></iframe>
 		</div>
 		<!--/project list-->
 
 		<!--project detail-->
 		<div class="detailLayer pageLayer">
-			<iframe name="frameDetail" id="frameDetail" src="" width="100%" height="100%" scrolling="yes" frameborder="0"></iframe>
+			<iframe name="frameDetail" id="frameDetail" src="projects-1-1.html" width="100%" height="100%" scrolling="yes" frameborder="0"></iframe>
 		</div>
 		<!--/project detail-->
 
@@ -403,10 +403,12 @@
 						$(this).fadeOut();
 					}
 				});
-
+                $(".whoWeAre").hide();
+                $(".whatWeDo").hide();
 			}
 			//show who
 			function showWho() {
+                $(".whoWeAre").show();
 				$(".whoWeAre").addClass("in");
 				frameWho.window.startWow();
 				$(".main-menu").removeClass("active");
@@ -423,6 +425,7 @@
 
 			//show do
 			function showDo(istrue) {
+                $(".whatWeDo").show();
 				$(".whatWeDo").addClass("in");
 				frameDo.window.startWow();
 				$(".main-menu").removeClass("active");
