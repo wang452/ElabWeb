@@ -537,7 +537,7 @@ body {
 		width: 13.4%;
 	}
 	.index-body {
-		height: 83%;
+		height: 	calc(100% - 114px);
 	}
 	.slider,
 	.unslider {
@@ -557,6 +557,15 @@ body {
 	}
 	.footer .right {
 		display: none;
+	}
+	#footer-left,#footer-right {
+		display: none;
+	}
+	#cp-mobile {
+		width: 100%;
+		text-align: center;
+		line-height: 140%;
+		visibility: visible;
 	}
 }
 
