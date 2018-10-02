@@ -1,179 +1,559 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>ELAB</title>
-  <link rel="stylesheet" type="text/css" href="progress/src/normalize.css">
-  <link rel="stylesheet" type="text/css" href="progress/style.css">
-  <link rel="stylesheet" type="text/css" href="progress/number-pb.css">
-  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
+<html lang='en'>
 
-<div class="container" id="sample-pb">
-		<p class="progress-num" id="progress-num">0</p>
-		<img class="logo" src="progress/img/LOGO.png"></img>
-
-
-  <section id="sample-pb" class="sample-pb">
-		<div class="number-pb">
-			<div class="number-pb-shown"></div>
-			<div class="number-pb-num">0%</div>
-		</div>
-  </section>
-	<div id="hidden" class="hidden">
-		<img src="images/index/1_objects@2x.png" class="hidden_img"></img>
-		<img src="images/index/2_objects_1.png" class="hidden_img"></img>
-		<img src="images/index/2_objects.png" class="hidden_img"></img>
-		<img src="images/index/1_objects_1.png" class="hidden_img"></img>
-		<img src="images/index/1_objects_2.png" class="hidden_img"></img>
-		<img src="images/index/1_objects_3.png" class="hidden_img"></img>
-		<img src="images/index/1_objects_4.png" class="hidden_img"></img>
-		<img src="images/index/1_objects_5.png" class="hidden_img"></img>
-		<img src="images/index/1_objects_6.png" class="hidden_img"></img>
-		<img src="images/index/1_objects_7.png" class="hidden_img"></img>
-		<img src="images/index/1_objects_10.png" class="hidden_img"></img>
-		<img src="images/index/1_objects_11.png" class="hidden_img"></img>
-		<img src="images/index/1_objects.png" class="hidden_img"></img>
-		<img src="images/index/1_objects@2x_1.png" class="hidden_img"></img>
-		<img src="images/index/1_objects@2x_2.png" class="hidden_img"></img>
-		<img src="images/index/1_objects@2x_3.png" class="hidden_img"></img>
-		<img src="images/index/1_objects@2x_4.png" class="hidden_img"></img>
-		<img src="images/index/1_objects@2x_5.png" class="hidden_img"></img>
-		<img src="water/img/dmaps/2048x2048/clouds.jpg" class="hidden_img"></img>
-		<img src="images/1.png" class="hidden_img"></img>
-		<img src="images/BG@2x.jpg" class="hidden_img"></img>
-		<img src="images/bg01.png" class="hidden_img"></img>
-		<img src="images/bg02.png" class="hidden_img"></img>
-		<img src="images/bg03.png" class="hidden_img"></img>
-		<img src="images/Bitmap@2x.png" class="hidden_img"></img>
-		<img src="images/Bitmap@2x9.png" class="hidden_img"></img>
-		<img src="images/Group 2@2x01.png" class="hidden_img"></img>
-		<img src="images/Group 2@2x02.png" class="hidden_img"></img>
-		<img src="images/Group 2@2x03.png" class="hidden_img"></img>
-		<img src="images/Group 4@2x.png" class="hidden_img"></img>
-		<img src="images/Group 7@2x.png" class="hidden_img"></img>
-		<img src="images/Group@2x.png" class="hidden_img"></img>
-		<img src="images/Group@2x01.png" class="hidden_img"></img>
-		<img src="images/Group@2x02.png" class="hidden_img"></img>
-		<img src="images/Group@2x03.png" class="hidden_img"></img>
-		<img src="images/ic_clear@2x.png" class="hidden_img"></img>
-		<img src="images/Line.png" class="hidden_img"></img>
-		<img src="images/Line0.png" class="hidden_img"></img>
-		<img src="images/LOGO.png" class="hidden_img"></img>
-		<img src="images/Main@2x.png" class="hidden_img"></img>
-		<img src="images/Main@2x01.png" class="hidden_img"></img>
-		<img src="images/Menu-icon.png" class="hidden_img"></img>
-		<img src="images/Menu-icon@2x.png" class="hidden_img"></img>
-		<img src="images/Works-icon@2x.png" class="hidden_img"></img>
-		<img src="images/contact/1_objects@2x_1.png" class="hidden_img"></img>
-		<img src="images/contact/1_objects@2x_2.png" class="hidden_img"></img>
-		<img src="images/contact/1_objects@2x_3.png" class="hidden_img"></img>
-		<img src="images/contact/1_objects@2x_4.png" class="hidden_img"></img>
-		<img src="images/contact/1_objects@2x_5.png" class="hidden_img"></img>
-		<img src="images/contact/1_objects@2x_6.png" class="hidden_img"></img>
-		<img src="images/contact/1_objects@2x.png" class="hidden_img"></img>
-
-		<img src="images/join/1_objects@2x_1.png" class="hidden_img"></img>
-		<img src="images/join/1_objects@2x_2.png" class="hidden_img"></img>
-		<img src="images/join/1_objects@2x_3.png" class="hidden_img"></img>
-		<img src="images/join/1_objects@2x_4.png" class="hidden_img"></img>
-		<img src="images/join/1_objects@2x_5.png" class="hidden_img"></img>
-		<img src="images/join/1_objects@2x_6.png" class="hidden_img"></img>
-		<img src="images/join/1_objects@2x_7.png" class="hidden_img"></img>
-		<img src="images/join/1_objects@2x.png" class="hidden_img"></img>
-		<img src="images/join/2_objects@2x_1.png" class="hidden_img"></img>
-		<img src="images/join/2_objects@2x.png" class="hidden_img"></img>
-		<img src="images/join/3_objects@2x_1.png" class="hidden_img"></img>
-		<img src="images/join/3_objects@2x.png" class="hidden_img"></img>
-
-		<img src="images/do/1_objects@2x_1.png" class="hidden_img"></img>
-		<img src="images/do/1_objects@2x_2.png" class="hidden_img"></img>
-		<img src="images/do/1_objects@2x_3.png" class="hidden_img"></img>
-		<img src="images/do/1_objects@2x_4.png" class="hidden_img"></img>
-		<img src="images/do/1_objects@2x_5.png" class="hidden_img"></img>
-		<img src="images/do/1_objects@2x_6.png" class="hidden_img"></img>
-		<img src="images/do/1_objects@2x_7.png" class="hidden_img"></img>
-		<img src="images/do/1_objects@2x_8.png" class="hidden_img"></img>
-		<img src="images/do/1_objects@2x_9.png" class="hidden_img"></img>
-		<img src="images/do/1_objects@2x_10.png" class="hidden_img"></img>
-		<img src="images/do/1_objects@2x_11.png" class="hidden_img"></img>
-		<img src="images/do/1_objects@2x_12.png" class="hidden_img"></img>
-		<img src="images/do/1_objects@2x_13.png" class="hidden_img"></img>
-		<img src="images/do/1_objects@2x_14.png" class="hidden_img"></img>
-		<img src="images/do/1_objects@2x_15.png" class="hidden_img"></img>
-		<img src="images/do/1_objects@2x.png" class="hidden_img"></img>
-		<img src="images/do/2_objects@2x_1.png" class="hidden_img"></img>
-		<img src="images/do/2_objects@2x_2.png" class="hidden_img"></img>
-		<img src="images/do/2_objects@2x.png" class="hidden_img"></img>
-		<img src="images/do/3_objects@2x.png" class="hidden_img"></img>
-		<img src="images/do/4_objects@2x.png" class="hidden_img"></img>
-
-    <img src="images/projects/1_objects@2x_1.png" class="hidden_img"></img>
-    <img src="images/projects/1_objects@2x_2.png" class="hidden_img"></img>
-    <img src="images/projects/1_objects@2x_3.png" class="hidden_img"></img>
-    <img src="images/projects/1_objects@2x_4.png" class="hidden_img"></img>
-    <img src="images/projects/1_objects@2x.png" class="hidden_img"></img>
-    <img src="images/projects/1_objects@2x_6.png" class="hidden_img"></img>
-    <img src="images/projects/1_objects@2x_7.png" class="hidden_img"></img>
-    <img src="images/projects/1_objects@2x_8.png" class="hidden_img"></img>
-    <img src="images/projects/1_objects@2x_9.png" class="hidden_img"></img>
-    <img src="images/projects/1_objects@2x_10.png" class="hidden_img"></img>
-    <img src="images/projects/1_objects@2x_11.png" class="hidden_img"></img>
-    <img src="images/projects/1_objects@2x_12.png" class="hidden_img"></img>
-    <img src="images/projects/1_objects@2x_13.png" class="hidden_img"></img>
-    <img src="images/projects/1_objects@2x_14.png" class="hidden_img"></img>
-    <img src="images/projects/1_objects@2x_15.png" class="hidden_img"></img>
-    <img src="images/projects/2_objects@2x.png" class="hidden_img"></img>
-	</div>
-</div>
-
-
-
-<script src="progress/src/jquery.min.js"></script>
-<script src="progress/src/jquery.velocity.min.js"></script>
-<script src="progress/number-pb.js"></script>
-<script src= "https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script>
-<script>
-  $(function() {
-		var imgs 	= document.querySelectorAll( '.hidden_img' );
-		console.log(imgs.length);
-		var total = imgs.length;
-		var loaded = 0;
-		var progressFunction = function(progress){
-			var num = Math.round(progress);
-			console.log(num);
-			if(num == 100){
-				window.location.href='home.html';
-				console.log("finish");
-			}else{
-				$('#progress-num').text(num);
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0,user-scalable=no'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+		<title>ELAB</title>
+		<link rel="stylesheet" href="css/reset.css"></link>
+		<link rel="stylesheet" href="css/style.css?v=1.001"></link>
+		<link rel="stylesheet" href="css/unslider.css"></link>
+		<link rel="stylesheet" href="css/animate.min.css"></link>
+		<style type="text/css">
+			.page {
+				opacity: 0;
 			}
-		}
-    var num = 100;
-    var title = $('#progress-num').text('0');
-    var controlBar = $('#sample-pb .number-pb').NumberProgressBar({
-      duration: 5000,
-      percentage: 0,
-			progressFunction : progressFunction
-    });
-		$('#hidden').imagesLoaded()
-	  	.always( function( instance ) {
-	  })
-	  .done( function( instance ) {
-	  })
-	  .fail( function( instance ) {
-	  })
-	  .progress( function( instance, image ) {
-	    var result = image.isLoaded ? 'loaded' : 'broken';
-			loaded += 1;
-			var progress = loaded * 100/total;
-			controlBar.reach(progress);
-	  });
+			
+			.top-menu {
+				background: none;
+			}
+		</style>
+	</head>
 
+	<body>
+		<!--loading z-index:99999-->
+		<div class="loading">
+			<iframe src="loading.html" width="100%" height="100%" scrolling="no" frameborder="0"></iframe>
+		</div>
 
-  });
-</script>
-</div>
-</body>
+		<div id="menuLayer" class="page">
+
+			<!--top menu-->
+			<div class="top-menu wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
+				<div class="logo">
+					<a href="index.html"><img class="inner-icon" src="http://yun-image.elab-plus.com/images/index/1_objects@2x_2.png" /></a>
+				</div>
+				<div class="menu"><img class="inner-icon" src="http://yun-image.elab-plus.com/images/index/1_objects@2x_3.png" /></div>
+				<div class="cases">
+					<a href="javascript:showProjects();"><img class="inner-icon" src="http://yun-image.elab-plus.com/images/index/1_objects@2x_4.png" /></a>
+				</div>
+			</div>
+
+			<!--main menu-->
+			<div class="main-menu" data-wow-duration="1s" data-wow-delay="2s">
+				<div class="menu-close"></div>
+				<ul class="menu-list">
+					<li>
+						<a href="javascript:showWho();">我们是谁<small>WHO WE ARE</small></a>
+					</li>
+					<li>
+						<a href="javascript:showDo();">我们在做什么<small>WHAT WE DO</small></a>
+					</li>
+					<li>
+						<a href="javascript:showProjects();">作品案例<small>PROJECTS</small></a>
+					</li>
+					<li>
+						<a href="javascript:showCareers();">加入我们<small>CAREERS</small></a>
+					</li>
+					<li>
+						<a href="javascript:showContact();">联系我们<small>CONTACTS</small></a>
+					</li>
+				</ul>
+			</div>
+
+			<!--main-->
+			<div class="index-body wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
+				<div class="slider">
+					<ul>
+						<!--<li>
+							<img class="slider-img animation" src="http://yun-image.elab-plus.com/images/index/1_objects@2x_7.png" />
+							<div class="slider-title">主图1</div>
+							<div class="link-box">
+								<a href="javascript:showSliderLink('projects-1-1.html');" class="slider-links wow fadeIn" data-wow-duration="1s" data-wow-delay="5.2s">浏览作品</a>
+							</div>
+						</li>
+						<li>
+							<img class="slider-img animation" src="http://yun-image.elab-plus.com/images/index/1_objects@2x_8.png" />
+							<div class="slider-title" style="color: #000;">未来人居实验室</div>
+							<div class="link-box">
+								<a href="javascript:showSliderLink('');" class="slider-links wow fadeIn" data-wow-duration="1s" data-wow-delay="5.2s">浏览作品</a>
+							</div>
+						</li>
+						<li>
+							<img class="slider-img animation" src="http://yun-image.elab-plus.com/images/index/1_objects@2x_9.png" />
+							<div class="slider-title">elab.东宫</div>
+							<div class="link-box">
+								<a href="javascript:showSliderLink('');" class="slider-links wow fadeIn" data-wow-duration="1s" data-wow-delay="5.2s">浏览作品</a>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+				<div class="small-slider">
+					<img class="slider-img wow fadeIn" data-wow-duration="2s" data-wow-delay="1s" src="http://yun-image.elab-plus.com/images/index/1_objects@2x.png" />
+					<div class="link-box">
+						<a href="javascript:showProjects();" class="slider-links wow fadeIn" data-wow-duration="1s" data-wow-delay="5.2s">浏览作品</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="who-we-are wow fadeInUpIndex" data-wow-duration="1s" data-wow-delay="3s">
+				<p>
+					<a href="javascript:showWho();">我们是谁</a>
+				</p>
+				<div class="slide-line"></div>
+				<div class="slide-line1"></div>
+			</div>
+			<div class="what-we-do wow fadeInUpIndex1" data-wow-duration="1s" data-wow-delay="3s">
+				<p>
+					<a href="javascript:showDo();">我们在做什么</a>
+				</p>
+				<div class="slide-line"></div>
+				<div class="slide-line1"></div>
+			</div>
+
+			<div id="leftWave" class="wave-bg">
+				<div class="wave-bg-inner1"></div>
+				<div class="wave-bg-inner2"></div>
+			</div>
+			<div id="rightWave" class="wave-bg">
+				<div class="wave-bg-inner1"></div>
+				<div class="wave-bg-inner2"></div>
+			</div>
+
+			<!--footer-->
+			<div class="footer wow fadeIn" data-wow-duration="1s" data-wow-delay="4s">
+				<div class="left">Copyright©2015-2018, elab-plus.com. All rights reserved. | 沪ICP备15047801号-1</div>
+				<div class="right">上海定卓⽹络科技有限公司 电话：021-50753278 地址：上海市静安区彭江路602号E座408室</div>
+			</div>
+
+		</div>
+
+		<!--who we are-->
+		<div class="whoWeAre pageLayer">
+			<div class="black-mask"></div>
+			<iframe name="frameWho" src="licheng.html" width="100%" height="100%" scrolling="yes" frameborder="0"></iframe>
+		</div>
+		<!--/who we are-->
+
+		<!--what we do-->
+		<div class="whatWeDo pageLayer">
+			<div class="black-mask"></div>
+			<iframe name="frameDo" src="do.html" width="100%" height="100%" scrolling="yes" frameborder="0"></iframe>
+		</div>
+		<!--/what we do-->
+
+		<!--what we do-->
+		<div class="contactLayer pageLayer">
+			<iframe name="frameContacts" src="contact.html" width="100%" height="100%" scrolling="yes" frameborder="0"></iframe>
+		</div>
+		<!--/what we do-->
+
+		<!--what we do-->
+		<div class="careersLayer pageLayer">
+			<iframe name="frameCareers" src="careers.html" width="100%" height="100%" scrolling="yes" frameborder="0"></iframe>
+		</div>
+		<!--/what we do-->
+
+		<!--what we do-->
+		<div class="projectsLayer pageLayer">
+			<iframe name="frameProjects" src="projects.html" width="100%" height="100%" scrolling="yes" frameborder="0"></iframe>
+		</div>
+		<!--/what we do-->
+
+		<!--project list-->
+		<div class="listLayer pageLayer">
+			<iframe name="frameList" id="frameList" src="" width="100%" height="100%" scrolling="yes" frameborder="0"></iframe>
+		</div>
+		<!--/project list-->
+
+		<!--project detail-->
+		<div class="detailLayer pageLayer">
+			<iframe name="frameDetail" id="frameDetail" src="" width="100%" height="100%" scrolling="yes" frameborder="0"></iframe>
+		</div>
+		<!--/project detail-->
+
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/unslider-min.js"></script>
+		<script src="js/jquery.event.move.js"></script>
+		<script src="js/jquery.event.swipe.js"></script>
+		<!--<script src="water/js/pixi.min.js"></script>
+		<script src="water/js/TweenMax.min.js"></script>
+		<script src="water/js/main.js"></script>-->
+		<script src="js/wow.js"></script>
+		<script>
+			//绑定前进后退事件
+			var $_cpage = "index"; //当前页面
+			window.onpopstate = function(event) {
+				var $_state = event.state;
+				var $_url = window.location.href;
+				var $_mark = $_url.split("#")[1] || "";
+                console.log($_mark);
+				//先回退到首页,再执行显示某个页面
+				showIndex();
+				
+				if($_mark != "") {
+					if($_state.page == "who") {
+						showWho();
+					}
+					if($_state.page == "do") {
+						showDo();
+					}
+					if($_state.page == "projects" || $_state.page == "list") {
+						showProjects();
+					}
+					if($_state.page == "careers") {
+						showCareers();
+					}
+					if($_state.page == "contact") {
+						showContact();
+					}
+				}
+
+			};
+
+			/*slider*/
+			$(function() {
+
+				//存入首页的history数据
+				history.pushState({
+					page: 'index'
+				}, "index", "index.html");
+
+				/*var mySlider = $('.slider').unslider({
+					infinite: true,
+					nav: false,
+					arrows: false,
+					fluid: false,
+					autoplay: true,
+					delay: 10000,
+					speed: 800
+					//index: s //初始化显示哪个礼品的索引
+				});*/
+
+				//大图数据加载
+				var percent, Count, Imgs;
+				var ImgLoaded = 0;
+				var spriteImagesSrc = [];
+
+				$.get("http://106.14.225.13:8081/rest/listBanner", function(result) {
+
+					var $_list = result.result.list;
+					if($_list.length > 0) { //有返回数据列表
+						$(".slider ul").empty();
+
+						var host = "http://106.14.225.13:8081";
+
+						for(var i = 0; i < $_list.length; i++) { //生成unslide数据
+							var img = $_list[i];
+							spriteImagesSrc.push(host + img['image']);
+							var $_html = `<li>
+							<img class="slider-img animation" src="${host+img['image']}" />
+							<div class="slider-title">${img['name']}</div>
+							<div class="link-box">
+								<a href="javascript:showSliderLink('${img['url']}');" class="slider-links wow fadeIn" data-wow-duration="1s" data-wow-delay="4s">浏览作品</a>
+							</div>
+						    </li>`;
+							$(".slider ul").append($_html);
+						}
+
+						//Count = spriteImagesSrc.length; //图片数量 
+						//Imgs = new Array(Count);
+						//preLoadImgs();
+						//列表加载完毕，开始slider
+						var mySlider = $('.slider').unslider({
+							infinite: true,
+							nav: false,
+							arrows: false,
+							autoplay: true,
+							delay: 3000,
+							speed: 800
+							//index: s //初始化显示哪个礼品的索引
+						});
+					}
+				});
+
+				//预加载图片 
+				function preLoadImgs() {
+					for(var i = 0; i < Imgs.length; i++) {
+						Imgs[i] = new Image();
+						downloadImage(i);
+					}
+				}
+				//加载单个图片 
+				function downloadImage(i) {
+					Imgs[i].src = spriteImagesSrc[i];
+					Imgs[i].onLoad = validateImages(i);
+				}
+				//验证是否成功加载完成，如不成功则重新加载 
+				function validateImages(i) {
+					if(!Imgs[i].complete) {
+						/*window.setTimeout(function(){
+							downloadImage(i);
+						}, 200);*/
+					} else if(typeof Imgs[i].naturalWidth != "undefined" && Imgs[i].naturalWidth == 0) {
+						/*window.setTimeout(function(){
+							downloadImage(i);
+						}, 200);*/
+					} else {
+						ImgLoaded++;
+						//console.log("the count is: " + Count);
+						if(ImgLoaded == Count) {
+							//加载完毕，开始slider
+							var mySlider = $('.slider').unslider({
+								infinite: true,
+								nav: false,
+								arrows: false,
+								autoplay: true,
+								delay: 3000,
+								speed: 800
+								//index: s //初始化显示哪个礼品的索引
+							});
+						}
+					}
+				}
+
+			});
+			//resize
+			window.onresize = function() {
+				window.location.reload();
+			}
+			/* end slider*/
+
+			$(function() {
+
+				//show menu
+				$("#menuLayer .menu").on("click", function(e) {
+					$(".main-menu").addClass("active");
+				});
+				//close menu
+				$('.menu-close').on('click', function(e) {
+					$(".main-menu").removeClass("active");
+				});
+
+				//hover style
+				$(".who-we-are").on('mouseover', function(e) {
+					$(".footer .left,#leftWave").addClass("active");
+					$(".who-we-are .slide-line,.who-we-are .slide-line1").addClass("active");
+				});
+				$(".who-we-are").on('mouseout', function(e) {
+					$(".footer .left,#leftWave").removeClass("active");
+					$(".who-we-are .slide-line,.who-we-are .slide-line1").removeClass("active").addClass("fadeInUp");
+
+				});
+
+				$(".what-we-do").on('mouseover', function(e) {
+					$(".footer .right,#rightWave").addClass("active");
+					$(".what-we-do .slide-line,.what-we-do .slide-line1").addClass("active");
+					$("#menuLayer .cases img").attr("src", "images/index/1_objects@2x_5.png");
+				});
+				$(".what-we-do").on('mouseout', function(e) {
+					//setTimeout(function(){
+					$(".footer .right,#rightWave").removeClass("active");
+					$(".what-we-do .slide-line,.what-we-do .slide-line1").removeClass("active").addClass("fadeInUp");
+					$("#menuLayer .cases img").attr("src", "images/index/1_objects@2x_4.png");
+					//},600);
+				});
+
+				$('#whatWeDo .menu').on('click', function(e) {
+					$(".whatWeDo").fadeOut(500);
+					e.stopPropagation();
+					setTimeout(function() {
+						$(".whatWeDo").removeClass("in");
+					}, 500);
+				});
+
+			});
+
+			window.onload = function() {
+				var $_w = $('html body').width();
+				console.log("the w is:" + $_w);
+				if($_w <= 768) {
+					$(".footer").removeClass("fadeIn").addClass("fadeInLeft");
+				}
+			}
+
+			//loading completed
+			function hideLoading() {
+				//console.log("here");
+				$(".loading").fadeOut(1000);
+				$(".page").css("opacity", "1");
+				//start wow
+				var wow = new WOW({
+					boxClass: 'wow',
+					animateClass: 'animated',
+					offset: 0,
+					mobile: true,
+					live: true
+				});
+				wow.init();
+			}
+
+			/****页面操作区*****/
+			//返回首页统一处理函数
+			function showIndex() {
+				$(".pageLayer").each(function(i) {
+					var $_class = $(this).attr("class");
+					//console.log($_class);
+					if($_class.indexOf("whoWeAre") > -1 || $_class.indexOf("whatWeDo") > -1 || $_class.indexOf("listLayer") > -1 || $_class.indexOf("detailLayer") > -1) {
+						$(this).removeClass("in");
+					} else {
+						$(this).fadeOut();
+					}
+				});
+
+			}
+			//show who
+			function showWho() {
+				$(".whoWeAre").addClass("in");
+				frameWho.window.startWow();
+				$(".main-menu").removeClass("active");
+				//存入history数据，并设置当前页面
+				history.pushState({
+					page: 'who'
+				}, "who we are", "#who");
+				$_cpage = "who";
+			}
+			//close who we are
+			function closeWho() {
+				$(".whoWeAre").removeClass("in");
+			}
+
+			//show do
+			function showDo(istrue) {
+				$(".whatWeDo").addClass("in");
+				frameDo.window.startWow();
+				$(".main-menu").removeClass("active");
+				//存入history数据，并设置当前页面
+				history.pushState({
+					page: 'do'
+				}, "what we do", "#do");
+				$_cpage = "do";
+			}
+			//close what we do
+			function closeDo() {
+				$(".whatWeDo").removeClass("in");
+			}
+
+			//show contacts
+			function showContact() {
+				$(".contactLayer").fadeIn(500);
+				frameContacts.window.startWow();
+				$(".main-menu").removeClass("active");
+				//存入history数据，并设置当前页面
+				history.pushState({
+					page: 'contact'
+				}, "contact", "#contact");
+				$_cpage = "contact";
+			}
+			//close contacts
+			function closeContact() {
+				$(".contactLayer").fadeOut(500);
+			}
+
+			//show contacts
+			function showCareers() {
+				$(".careersLayer").fadeIn(500);
+				frameCareers.window.startWow();
+				$(".main-menu").removeClass("active");
+				//存入history数据，并设置当前页面
+				history.pushState({
+					page: 'careers'
+				}, "careers", "#careers");
+				$_cpage = "careers";
+			}
+			//close contacts
+			function closeCareers() {
+				$(".careersLayer").fadeOut(500);
+			}
+
+			//show Projects
+			function showProjects() {
+				$(".projectsLayer").fadeIn(500);
+				frameProjects.window.startWow();
+				$(".main-menu").removeClass("active");
+				//存入history数据，并设置当前页面
+				history.pushState({
+					page: 'projects'
+				}, "projects", "#projects");
+				$_cpage = "projects";
+			}
+			//close contacts
+			function closeProjects() {
+				$(".projectsLayer").fadeOut(500);
+			}
+			//close sub layer and show projects
+			function closeAndShowPro(str) {
+				console.log(str);
+				$("." + str + "").fadeOut(500);
+				setTimeout(function() {
+					showProjects();
+				}, 500);
+			}
+			//close sub layer and show careers
+			function closeAndShowCareers() {
+				$(".whoWeAre").fadeOut(500);
+				setTimeout(function() {
+					$(".whoWeAre").removeClass("in");
+					showCareers();
+				}, 500);
+			}
+			
+			//show list-1
+			function showList(id){
+				
+				$('#frameList').attr("src","projects-1.html?parent="+id+"");
+				$(".listLayer").addClass("in");
+				//frameList.window.startWow();
+				$(".main-menu").removeClass("active");
+				//存入history数据，并设置当前页面
+				history.pushState({
+					page: 'list'
+				}, "listLayer", "#list");
+				$_cpage = "list";
+			}
+			//close list
+			function closeList() {
+				$(".listLayer").removeClass("in");
+			}
+			
+			//show list-1
+			function showDetail(src){
+				if(!src || src=="" || src=="#"){return false;}
+				$('#frameDetail').attr("src","."+src+"");
+				$(".detailLayer").addClass("in");
+				$(".main-menu").removeClass("active");
+				//存入history数据，并设置当前页面
+				history.pushState({
+					page: 'detail'
+				}, "detailLayer", "#detail");
+				$_cpage = "detail";
+				
+			}
+			//close list
+			function closeDetail() {
+				$(".detailLayer").removeClass("in");
+			}
+			
+			//showSliderLink
+			function showSliderLink(url){
+				
+				if(!url || url=="" || url=="#"){return false;}
+				
+				$('#frameDetail').attr("src","./"+url+"");
+				$(".detailLayer").addClass("in");
+				$(".main-menu").removeClass("active");
+				//存入history数据，并设置当前页面
+				history.pushState({
+					page: 'detail'
+				}, "detailLayer", "#detail");
+				$_cpage = "detail";
+			}
+			
+			
+		</script>
+
+	</body>
+
 </html>

@@ -9,6 +9,17 @@
 		<title>PROJECTS | ELAB</title>
 		<link rel="stylesheet" href="css/reset.css"></link>
 		<link rel="stylesheet" href="css/style.css"></link>
+		<link rel="stylesheet" href="css/animate.min.css"></link>
+		<style type="text/css">
+			html,
+			body {
+				background: #1b2030;
+				height: auto;
+			}
+			.slide-line,.slide-line1{
+				background: #fff;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -16,66 +27,78 @@
 		<div id="projects" class="page">
 
 			<!--top menu-->
-			<div class="top-menu">
+			<div class="top-menu wow fadeInDown" data-wow-duration="1s" data-wow-delay="2s">
 				<div class="logo">
-					<a href="index.html"><img class="inner-icon" src="images/contact/1_objects@2x_3.png" /></a>
+					<a href="javascript:parent.showIndex();"><img class="inner-icon" src="http://yun-image.elab-plus.com/images/contact/1_objects@2x_3.png" /></a>
 				</div>
-				<div class="menu"><img class="inner-icon" src="images/contact/1_objects@2x_4.png" /></div>
-				<div class="cases"><a href="projects.html"><img class="inner-icon" src="images/contact/1_objects@2x_5.png" /></a></div>
+				<div class="menu"><img class="inner-icon" src="http://yun-image.elab-plus.com/images/contact/1_objects@2x_4.png" /></div>
+				<div class="cases"><a href="javascript:parent.showIndex();parent.showProjects();"><img class="inner-icon" src="http://yun-image.elab-plus.com/images/contact/1_objects@2x_5.png" /></a></div>
 			</div>
-
+			
 			<!--main menu-->
 			<div class="main-menu">
-				<div class="menu-close">X</div>
+				<div class="menu-close"></div>
 				<ul class="menu-list">
 					<li>
-						<a href="licheng.html">我们是谁<small>WHO WE ARE</small></a>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.closeProjects();parent.showWho();">我们是谁<small>WHO WE ARE</small></a>
 					</li>
 					<li>
-						<a href="do.html">我们在做什么<small>WHAT WE DO</small></a>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.closeProjects();parent.showDo();">我们在做什么<small>WHAT WE DO</small></a>
 					</li>
 					<li>
-						<a href="projects.html">作品案例<small>PROJECTS</small></a>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.closeProjects();parent.showProjects();">作品案例<small>PROJECTS</small></a>
 					</li>
 					<li>
-						<a href="careers.html">加入我们<small>CAREERS</small></a>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.closeProjects();parent.showCareers();">加入我们<small>CAREERS</small></a>
 					</li>
 					<li>
-						<a href="contact.html">联系我们<small>CONTACTS</small></a>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.closeProjects();parent.showContact();">联系我们<small>CONTACTS</small></a>
 					</li>
 				</ul>
+			</div>
+			
+			<div class="who-we-are wow fadeInUpIndex" data-wow-duration="1s" data-wow-delay="3s">
+				<p>
+					<a href="javascript:thisShowWho();">我们是谁</a>
+				</p>
+				<div class="slide-line"></div>
+				<div class="slide-line1"></div>
+			</div>
+			<div class="what-we-do wow fadeInUpIndex1" data-wow-duration="1s" data-wow-delay="3s">
+				<p>
+					<a href="javascript:parent.closeProjects();parent.closeList();parent.showDo();">我们在做什么</a>
+				</p>
+				<div class="slide-line"></div>
+				<div class="slide-line1"></div>
 			</div>
 
 			<!--main-->
 			<div class="project-list">
-				
+
 				<!--single item-->
 				<div class="project-item-inner">
-					<img class="inner-icon" src="images/projects/1_objects@2x_6.png" />
-					<div class="close-bar"></div>
-					<div class="item-desc item-inner"><span>城市核心综合体</span></div>
-					<div class="item-title item-inner">天空森林城市<p>Sky Forest City</p></div>
-					<div class="item-link item-inner"><a href="projects-1-1.html">宁波</a><span class="small-line"></span><a href="projects-1-1.html">无锡</a></div>
+					<img class="inner-icon wow fadeIn" data-wow-duration="1s" data-wow-delay="3s" id="bigImage" src="" />
+					<div class="close-bar wow fadeIn" data-wow-duration="1s" data-wow-delay="3.5s"></div>
+					<div class="item-desc item-inner wow fadeInUp" data-wow-duration="1s" data-wow-delay="4s"><span></span></div>
+					<div class="item-title item-inner wow fadeInUp" data-wow-duration="1s" data-wow-delay="4s">
+						<p></p>
+					</div>
+					<div class="item-link item-inner wow fadeInUp" data-wow-duration="1s" data-wow-delay="4s">
+						<!--<a href="projects-1-1.html">宁波</a><span class="small-line"></span>
+						<a href="projects-1-1.html">无锡</a>-->
+					</div>
 				</div>
 				<!--/single item-->
-				
-			</div>
-			
-			<div class="who-we-are"><p><a href="licheng.html">我们是谁</a></p><div class="slide-line"></div></div>
-			<div class="what-we-do"><p><a href="do.html">我们在做什么</a></p><div class="slide-line"></div></div>
 
-			<!--footer-->
-			<!--<div class="footer">
-				<div class="left">COPYRIGHT © 2018 ELAB. ALL RIGHTS RESERVED.</div>
-				<div class="right">POWERED BY ELAB</div>
-			</div>-->
+			</div>
 
 		</div>
 
 		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/wow.js"></script>
 		<script>
 			$(function() {
-
+				
 				//show menu
 				$(".menu").on("click", function(e) {
 					$(".main-menu").addClass("active");
@@ -85,13 +108,104 @@
 					$(".main-menu").removeClass("active");
 				});
 				
+				//hover style
+				$(".who-we-are").on('mouseover', function(e) {
+					$(".footer .left,#leftWave").addClass("active");
+					$(".who-we-are .slide-line,.who-we-are .slide-line1").addClass("active");
+				});
+				$(".who-we-are").on('mouseout', function(e) {
+					$(".footer .left,#leftWave").removeClass("active");
+					$(".who-we-are .slide-line,.who-we-are .slide-line1").removeClass("active").addClass("fadeInUp");
+
+				});
+
+				$(".what-we-do").on('mouseover', function(e) {
+					$(".footer .right,#rightWave").addClass("active");
+					$(".what-we-do .slide-line,.what-we-do .slide-line1").addClass("active");
+					$("#menuLayer .cases img").attr("src", "images/index/1_objects@2x_5.png");
+				});
+				$(".what-we-do").on('mouseout', function(e) {
+					//setTimeout(function(){
+					$(".footer .right,#rightWave").removeClass("active");
+					$(".what-we-do .slide-line,.what-we-do .slide-line1").removeClass("active").addClass("fadeInUp");
+					$("#menuLayer .cases img").attr("src", "images/index/1_objects@2x_4.png");
+					//},600);
+				});
+
+				//加载数据
+				var parentid = getQueryString("parent") || '';
+
+				if(!parentid || parentid == '') {
+					return flase;
+				} //父ID参数错误
+
+				//加载大类信息
+				$.get("http://106.14.225.13:8081/rest/listCategory1", function(result) {
+					console.log(result);
+					var $_list = result.result.list;
+					var host = "http://47.101.164.238:8081";
+					
+					if($_list.length > 0) {
+						for(var i = 0; i < $_list.length; i++) {
+
+							var tmp = $_list[i];
+							if(tmp['id'] == parentid) { //当前分类数据
+								var $_img = (host+tmp['image2']) || 'images/projects/1_objects@2x_6.jpg';
+								$("#bigImage").attr("src", $_img); //大图
+								$(".item-desc").html("<span>" + tmp["textTitle"] + "</span>");
+								$(".item-title").html("" + tmp["textCn"] + "<p>" + tmp["textEn"] + "</p>");
+							}
+
+						}
+					}
+
+				});
+
+				$.get("http://106.14.225.13:8081/rest/listCategory2?parent=" + parentid + "", function(result) {
+					//console.log(result);
+					var $_list = result.result.list;
+					if($_list.length > 0) {
+						$(".item-link").empty(); //清空demo
+						for(var i = 0; i < $_list.length; i++) {
+							var tmp = $_list[i];
+							var $_html = `<a href="javascript:parent.showDetail('${tmp['url']}');">${tmp['location']}</a><span class="small-line"></span>`;
+							$(".item-link").append($_html);
+						}
+					}
+
+				});
+
 				//close-bar click
-				$('.close-bar').on('click',function(e){
-				    window.location.href = "projects.html";
+				$('.close-bar').on('click', function(e) {
+					parent.closeList();
 				});
 				
-			});
+				var wow = new WOW({
+					boxClass: 'wow',
+					animateClass: 'animated',
+					offset: 0,
+					mobile: false,
+					live: true
+				});
+				wow.init();
 
+			});
+			
+			function thisShowWho(){
+				parent.closeProjects();
+				parent.closeList();
+				parent.showWho();
+			}
+
+			function getQueryString(name) {
+				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+				var r = window.location.search.substr(1).match(reg);
+				if(r != null) {
+					return decodeURI(r[2]);
+				} else {
+					return null;
+				}
+			}
 		</script>
 
 	</body>

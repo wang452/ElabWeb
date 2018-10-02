@@ -9,6 +9,27 @@
 		<title>PROJECTS | ELAB</title>
 		<link rel="stylesheet" href="css/reset.css"></link>
 		<link rel="stylesheet" href="css/style.css"></link>
+		<link rel="stylesheet" href="css/animate.min.css"></link>
+		<style type="text/css">
+			html,
+			body {
+				height: auto;
+				min-height: 100%;
+				background: #1b2030;
+			}
+			
+			#projects {
+				width: 100%;
+				height: auto;
+				background: #1b2030;
+				max-width: none;
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
+			.slide-line,.slide-line1{
+				background: #fff;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -16,102 +37,70 @@
 		<div id="projects" class="page">
 
 			<!--top menu-->
-			<div class="top-menu">
+			<div class="top-menu wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
 				<div class="logo">
-					<a href="index.html"><img class="inner-icon" src="images/contact/1_objects@2x_3.png" /></a>
+					<a href="javascript:parent.showIndex();"><img class="inner-icon" src="http://yun-image.elab-plus.com/images/contact/1_objects@2x_3.png" /></a>
 				</div>
-				<div class="menu"><img class="inner-icon" src="images/contact/1_objects@2x_4.png" /></div>
-				<div class="cases"><a href="projects.html"><img class="inner-icon" src="images/contact/1_objects@2x_5.png" /></a></div>
+				<div class="menu"><img class="inner-icon" src="http://yun-image.elab-plus.com/images/contact/1_objects@2x_4.png" /></div>
+				<div class="cases"><a href="javascript:void(0);"><img class="inner-icon" src="http://yun-image.elab-plus.com/images/contact/1_objects@2x_5.png" /></a></div>
 			</div>
-
+			
 			<!--main menu-->
 			<div class="main-menu">
-				<div class="menu-close">X</div>
+				<div class="menu-close"></div>
 				<ul class="menu-list">
 					<li>
-						<a href="licheng.html">我们是谁<small>WHO WE ARE</small></a>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.closeProjects();parent.showWho();">我们是谁<small>WHO WE ARE</small></a>
 					</li>
 					<li>
-						<a href="do.html">我们在做什么<small>WHAT WE DO</small></a>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.closeProjects();parent.showDo();">我们在做什么<small>WHAT WE DO</small></a>
 					</li>
 					<li>
-						<a href="projects.html">作品案例<small>PROJECTS</small></a>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.closeProjects();parent.showProjects();">作品案例<small>PROJECTS</small></a>
 					</li>
 					<li>
-						<a href="careers.html">加入我们<small>CAREERS</small></a>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.closeProjects();parent.showCareers();">加入我们<small>CAREERS</small></a>
 					</li>
 					<li>
-						<a href="contact.html">联系我们<small>CONTACTS</small></a>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.closeProjects();parent.showContact();">联系我们<small>CONTACTS</small></a>
 					</li>
 				</ul>
 			</div>
+			
+			<div class="who-we-are wow fadeInUpIndex" data-wow-duration="1s" data-wow-delay="2s">
+				<p>
+					<a href="javascript:parent.closeProjects();parent.showWho();">我们是谁</a>
+				</p>
+				<div class="slide-line"></div>
+				<div class="slide-line1"></div>
+			</div>
+			<div class="what-we-do wow fadeInUpIndex1" data-wow-duration="1s" data-wow-delay="2s">
+				<p>
+					<a href="javascript:parent.closeProjects();parent.showDo();">我们在做什么</a>
+				</p>
+				<div class="slide-line"></div>
+				<div class="slide-line1"></div>
+			</div>
 
 			<!--main-->
-			<div class="project-list">
+			<div class="project-list">			
 				
-				<!--single item-->
-				<div class="project-item">
-					<img class="inner-icon" src="images/projects/1_objects@2x_14.png" />
+				<!--<div class="project-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="2.5s">
+					<img class="inner-icon" src="http://yun-image.elab-plus.com/images/projects/1_objects@2x_14.jpg" />
 					<div class="item-desc item-inner"><span>城市核心综合体</span></div>
 					<div class="item-title item-inner">天空森林城市<p>Sky Forest City</p></div>
-					<div class="item-link item-inner"><a href="projects-1.html">浏览作品</a></div>
-				</div>
-				<!--/single item-->
-				
-				<!--single item-->
-				<div class="project-item">
-					<img class="inner-icon" src="images/projects/1_objects@2x_15.png" />
-					<div class="item-desc item-inner"><span>单身贵族</span></div>
-					<div class="item-title item-inner">WIII<p>WE·WISTFUL·WONDERFUL</p></div>
-					<div class="item-link item-inner"><a href="projects-1.html">浏览作品</a></div>
-				</div>
-				<!--/single item-->
-				
-				<!--single item-->
-				<div class="project-item">
-					<img class="inner-icon" src="images/projects/1_objects@2x.png" />
-					<div class="item-desc item-inner"><span>亲子少年</span></div>
-					<div class="item-title item-inner">少年派<p>Juvenile</p></div>
-					<div class="item-link item-inner"><a href="projects-1.html">浏览作品</a></div>
-				</div>
-				<!--/single item-->
-				
-				<!--single item-->
-				<div class="project-item">
-					<img class="inner-icon" src="images/projects/1_objects@2x_1.png" />
-					<div class="item-desc item-inner"><span>康养旅居</span></div>
-					<div class="item-title item-inner">中华草本养生<p>Space Customization</p></div>
-					<div class="item-link item-inner"><a href="projects-1.html">浏览作品</a></div>
-				</div>
-				<!--/single item-->
-				
-				<!--single item-->
-				<div class="project-item">
-					<img class="inner-icon" src="images/projects/1_objects@2x_2.png" />
-					<div class="item-desc item-inner"><span class="none"></span></div>
-					<div class="item-desc item-inner"><span class="none"></span></div>
-					<div class="item-title item-inner">商务行宫<p>Sky Forest City</p></div>
-					<div class="item-link item-inner"><a href="projects-1.html">浏览作品</a></div>
-				</div>
-				<!--/single item-->
+					<div class="item-link item-inner"><a href="projects-1.html" target="_self">浏览作品</a></div>
+				</div>-->			
 				
 			</div>
-			
-			<div class="who-we-are"><p><a href="licheng.html">我们是谁</a></p><div class="slide-line"></div></div>
-			<div class="what-we-do"><p><a href="do.html">我们在做什么</a></p><div class="slide-line"></div></div>
-
-			<!--footer-->
-			<!--<div class="footer">
-				<div class="left">COPYRIGHT © 2018 ELAB. ALL RIGHTS RESERVED.</div>
-				<div class="right">POWERED BY ELAB</div>
-			</div>-->
 
 		</div>
 
 		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/wow.js"></script>
 		<script>
 			$(function() {
-
+				
 				//show menu
 				$(".menu").on("click", function(e) {
 					$(".main-menu").addClass("active");
@@ -121,9 +110,74 @@
 					$(".main-menu").removeClass("active");
 				});
 				
+				//hover style
+				$(".who-we-are").on('mouseover', function(e) {
+					$(".footer .left,#leftWave").addClass("active");
+					$(".who-we-are .slide-line,.who-we-are .slide-line1").addClass("active");
+				});
+				$(".who-we-are").on('mouseout', function(e) {
+					$(".footer .left,#leftWave").removeClass("active");
+					$(".who-we-are .slide-line,.who-we-are .slide-line1").removeClass("active").addClass("fadeInUp");
+
+				});
+
+				$(".what-we-do").on('mouseover', function(e) {
+					$(".footer .right,#rightWave").addClass("active");
+					$(".what-we-do .slide-line,.what-we-do .slide-line1").addClass("active");
+					$("#menuLayer .cases img").attr("src", "images/index/1_objects@2x_5.png");
+				});
+				$(".what-we-do").on('mouseout', function(e) {
+					//setTimeout(function(){
+					$(".footer .right,#rightWave").removeClass("active");
+					$(".what-we-do .slide-line,.what-we-do .slide-line1").removeClass("active").addClass("fadeInUp");
+					$("#menuLayer .cases img").attr("src", "images/index/1_objects@2x_4.png");
+					//},600);
+				});
 				
+				
+				//读取分类数据
+				$.get("http://106.14.225.13:8081/rest/listCategory1", function(result) {
+					console.log(result);
+					var $_list = result.result.list;
+					var host = "http://47.101.164.238:8081";
+					
+					if($_list.length > 0) {
+						$(".project-list").empty();//清空demo
+						for(var i = 0; i < $_list.length; i++) {
+							var tmp = $_list[i];
+							var $_t = 0;
+							if(i<3){$_t = i*0.5+2;}
+							console.log($_t);
+							var $_img = (host+tmp['image1']) || 'images/projects/1_objects@2x_14.jpg';
+							var $_html = `<div class="project-item wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="${$_t}s">
+					                  <img class="inner-icon" src="${$_img}" />
+					                  <div class="item-desc item-inner"><span>${tmp['textTitle']}</span></div>
+					                  <div class="item-title item-inner">${tmp['textCn']}<p>${tmp['textEn']}</p></div>
+					                  <div class="item-link item-inner"><a href="javascript:parent.showList(${tmp['id']})" target="_self">浏览作品</a></div>
+				                      </div>`;
+				            $(".project-list").append($_html);          
+						}
+					}
+					
+				});
+
 			});
 
+			function startWow() {
+				//start wow
+				var wow = new WOW({
+					boxClass: 'wow',
+					animateClass: 'animated',
+					offset: 100,
+					mobile: true,
+					live: true
+				});
+				wow.init();
+			}
+			
+			function menuShowProjects(){
+				top.closeAndShowPro('projectsLayer');
+			}
 		</script>
 
 	</body>

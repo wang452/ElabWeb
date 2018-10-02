@@ -52,7 +52,13 @@ html {
 	height: 77px;
 	margin-top: -12vh;
 	margin-bottom: 12vh;
+	opacity: 0;
+	-webkit-animation: fadeIn 1s linear 0s forwards, flash 3s linear 1s infinite;
+	animation: fadeIn 1s linear 0s forwards, flash 3s linear 1s infinite;
 }
 .sample-pb {
 	width: 60%;
+}
+.number-pb .number-pb-shown{
+	transition: all ease 0.3s;
 }

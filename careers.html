@@ -9,6 +9,22 @@
 		<title>CAREERS | ELAB</title>
 		<link rel="stylesheet" href="css/reset.css"></link>
 		<link rel="stylesheet" href="css/style.css"></link>
+		<link rel="stylesheet" href="css/animate.min.css"></link>
+		<style type="text/css">
+			html,
+			body {
+				height: auto;
+			}
+			.full{padding-top: 0;}
+			#careers {
+				width: 100%;
+				height: auto;
+				background: #1b2030;
+				max-width: none;
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
+		</style>
 	</head>
 
 	<body>
@@ -17,105 +33,102 @@
 
 			<div class="full">
 				<!--top menu-->
-				<div class="top-menu">
-					<div class="logo">
-						<a href="index.html"><img class="inner-icon" src="images/index/1_objects@2x_2.png" /></a>
-					</div>
-					<div class="menu"><img class="inner-icon" src="images/index/1_objects@2x_3.png" /></div>
-					<div class="cases">
-						<a href="projects.html"><img class="inner-icon" src="images/index/1_objects@2x_4.png" /></a>
-					</div>
+			<div class="top-menu wow fadeInDown" data-wow-duration="1s" data-wow-delay="2s">
+				<div class="logo">
+					<a href="javascript:parent.showIndex();"><img class="inner-icon" src="http://yun-image.elab-plus.com/images/index/1_objects@2x_2.png" /></a>
 				</div>
-
-				<!--main menu-->
-				<div class="main-menu">
-					<div class="menu-close">X</div>
-					<ul class="menu-list">
-						<li>
-							<a href="licheng.html">我们是谁<small>WHO WE ARE</small></a>
-						</li>
-						<li>
-							<a href="do.html">我们在做什么<small>WHAT WE DO</small></a>
-						</li>
-						<li>
-							<a href="projects.html">作品案例<small>PROJECTS</small></a>
-						</li>
-						<li>
-							<a href="careers.html">加入我们<small>CAREERS</small></a>
-						</li>
-						<li>
-							<a href="contact.html">联系我们<small>CONTACTS</small></a>
-						</li>
-					</ul>
-				</div>
+				<div class="menu"><img class="inner-icon" src="http://yun-image.elab-plus.com/images/index/1_objects@2x_3.png" /></div>
+				<div class="cases"><a href="javascript:parent.showIndex();parent.showProjects();"><img class="inner-icon" src="http://yun-image.elab-plus.com/images/index/1_objects@2x_4.png" /></a></div>
+			</div>
+			
+			<!--main menu-->
+			<div class="main-menu">
+				<div class="menu-close"></div>
+				<ul class="menu-list">
+					<li>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.showIndex();parent.showWho();">我们是谁<small>WHO WE ARE</small></a>
+					</li>
+					<li>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.showIndex();parent.showDo();">我们在做什么<small>WHAT WE DO</small></a>
+					</li>
+					<li>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.showIndex();parent.showProjects();">作品案例<small>PROJECTS</small></a>
+					</li>
+					<li>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.showIndex();parent.showCareers();">加入我们<small>CAREERS</small></a>
+					</li>
+					<li>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.showIndex();parent.showContact();">联系我们<small>CONTACTS</small></a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="who-we-are wow fadeInUpIndex" data-wow-duration="1s" data-wow-delay="3s">
+				<p>
+					<a href="javascript:parent.showIndex();parent.showWho();">我们是谁</a>
+				</p>
+				<div class="slide-line"></div>
+				<div class="slide-line1"></div>
+			</div>
+			<div class="what-we-do wow fadeInUpIndex1" data-wow-duration="1s" data-wow-delay="3s">
+				<p>
+					<a href="javascript:parent.showIndex();parent.showDo();">我们在做什么</a>
+				</p>
+				<div class="slide-line"></div>
+				<div class="slide-line1"></div>
+			</div>
 
 				<!--main-->
 				<div class="index-body">&nbsp;</div>
 
-				<div class="who-we-are">
-					<p>
-						<a href="licheng.html">我们是谁</a>
-					</p>
-					<div class="slide-line"></div>
+				<div class="page-parts wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.5s">
+
+					<img class="parts-img wow fadeIn" data-wow-duration="1s" data-wow-delay="2.5s" src="http://yun-image.elab-plus.com/images/join/1_objects@2x.png" />
+					<img class="parts-title wow fadeInLeft" data-wow-duration="1s" data-wow-delay="2.5s" src="http://yun-image.elab-plus.com/images/join/3_objects@2x.png" />
+
+					<div class="parts2 page-parts">
+						<div class="future wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+							<p class="title">公司愿景</p>
+							<p><span class="line"></span></p>
+							<p>以数据和技术驱动的新型房地产柔性开发的领导者</p>
+							<p>未来人居的缔造者</p>
+						</div>
+						<div class="ouer-values wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s">
+							<p class="title">核心价值观</p>
+							<p>要成功更要成长，要胜利更要抗挫；</p>
+							<p>要权利更要责任，要自由更要自制；</p>
+							<p>要创新更要专注，要利己更要共赢；</p>
+							<p>要赚钱更要值钱，要高速更要高效。</p>
+						</div>
+						<img id="imgForParts2" class="parts-img wow fadeInUp" data-wow-duration="1s" src="http://yun-image.elab-plus.com/images/join/1_objects@2x_1.png" />
+					</div>
+
+					<div class="parts3 page-parts">
+						<div class="ouer-rules wow fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
+							<p class="title">用人理念</p>
+							<p>以德为先，以才为重；</p>
+							<p>知行合一，追求卓越。</p>
+						</div>
+					</div>
+
+					<div class="parts4 page-parts">
+						<img class="parts-title wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" src="http://yun-image.elab-plus.com/images/join/3_objects@2x_1.png" />
+						<div class="ouer-find">
+							<p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">用质朴丰盈的寻找</p>
+							<p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">用思辨论证的发现</p>
+							<p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">用真实高级的探寻</p>
+							<p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s">用知行合一的坚守</p>
+							<p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.2s">呈现生活美学的真谛</p>
+						</div>
+						<div class="view-jobs wow fadeInDown" data-wow-duration="1s" data-wow-delay="2s"><span>查看职位</span></div>
+					</div>
+
 				</div>
-				<div class="what-we-do">
-					<p>
-						<a href="do.html">我们在做什么</a>
-					</p>
-					<div class="slide-line"></div>
-				</div>
-				
-				<div class="page-parts">
-					
-					<img class="parts-img" src="images/join/1_objects@2x.png" />
-					<img class="parts-title" src="images/join/3_objects@2x.png" />
-                    <div class="parts2 page-parts">
-					    <div class="future">
-					    	<p class="title">公司愿景</p>
-					    	<p><span class="line"></span></p>
-					    	<p>以数据和技术驱动的新型房地产柔性开发的领导者</p>
-					    	<p>未来人居的缔造者</p>
-					    </div>
-					    <div class="ouer-values">
-					    	<p class="title">核心价值观</p>
-					    	<p>要成功更要成长，要胜利更要抗挫；</p>
-					    	<p>要权利更要责任，要自由更要自制；</p>
-					    	<p>要创新更要专注，要利己更要共赢；</p>
-					    	<p>要赚钱更要值钱，要高速更要高效。</p>
-					    </div>
-					    <img id="imgForParts2" class="parts-img" src="images/join/1_objects@2x_1.png" />
-				    </div>
-				    <div class="parts3 page-parts">
-				    	<div class="ouer-rules">
-					    	<p class="title">用人理念</p>
-					    	<p>以德为先，以才为重；</p>
-					    	<p>知行合一，追求卓越。</p>
-					    </div>
-				    </div>
-				    <div class="parts4 page-parts">
-				    	<img class="parts-title" src="images/join/3_objects@2x_1.png" />
-				    	<div class="ouer-find">
-					    	<p>用质朴丰盈的寻找</p>
-					    	<p>用思辨论证的发现</p>
-					    	<p>用真实高级的探寻</p>
-					    	<p>用知行合一的坚守</p>
-					    	<p>呈现生活美学的真谛</p>
-					    </div>
-					    <div class="view-jobs"><span>查看职位</span></div>
-				    </div>
-				</div>
-				
-				
+
 			</div>
 
-			<!--footer
-			<div class="footer">
-				<div class="left">COPYRIGHT © 2018 ELAB. ALL RIGHTS RESERVED.</div>
-				<div class="right">POWERED BY ELAB</div>
-			</div>-->
-
 		</div>
-		
+
 		<div class="jobs-layer">
 			<div class="close-bar"></div>
 			<div class="desc">根据ELAB 2018年未来规划，现诚聘以下职位：</div>
@@ -127,172 +140,24 @@
 				<div class="tab-cell  font0">更新时间</div>
 			</div>
 			<div class="tab-body">
-			    <div class="tab inner-tab">
-			    	<div class="tab-cell">产品经理</div>
-				    <div class="tab-cell hidden-small">2</div>
-				    <div class="tab-cell hidden-small">上海公司</div>
-				    <div class="tab-cell">上海</div>
-				    <div class="tab-cell font0">2018.09.04 <i class="list-arrow"></i></div>
-				    <!--the detail-->
-				    <div class="detail">
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    </div>
-			    </div>
-			    <div class="tab inner-tab">
-			    	<div class="tab-cell">数据库开发</div>
-				    <div class="tab-cell hidden-small">2</div>
-				    <div class="tab-cell hidden-small">上海公司</div>
-				    <div class="tab-cell">上海</div>
-				    <div class="tab-cell font0">2018.09.04 <i class="list-arrow"></i></div>
-				    <!--the detail-->
-				    <div class="detail">
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    </div>
-			    </div>
-			    <div class="tab inner-tab">
-			    	<div class="tab-cell">策划经理</div>
-				    <div class="tab-cell hidden-small">2</div>
-				    <div class="tab-cell hidden-small">上海公司</div>
-				    <div class="tab-cell">上海</div>
-				    <div class="tab-cell font0">2018.09.04 <i class="list-arrow"></i></div>
-				    <!--the detail-->
-				    <div class="detail">
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    </div>
-			    </div>
-			    <div class="tab inner-tab">
-			    	<div class="tab-cell">策划经理</div>
-				    <div class="tab-cell hidden-small">2</div>
-				    <div class="tab-cell hidden-small">上海公司</div>
-				    <div class="tab-cell">上海</div>
-				    <div class="tab-cell font0">2018.09.04 <i class="list-arrow"></i></div>
-				    <!--the detail-->
-				    <div class="detail">
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    </div>
-			    </div>
-			    <div class="tab inner-tab">
-			    	<div class="tab-cell">策划经理</div>
-				    <div class="tab-cell hidden-small">2</div>
-				    <div class="tab-cell hidden-small">上海公司</div>
-				    <div class="tab-cell">上海</div>
-				    <div class="tab-cell font0">2018.09.04 <i class="list-arrow"></i></div>
-				    <!--the detail-->
-				    <div class="detail">
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    </div>
-			    </div>
-			    <div class="tab inner-tab">
-			    	<div class="tab-cell">策划经理</div>
-				    <div class="tab-cell hidden-small">2</div>
-				    <div class="tab-cell hidden-small">上海公司</div>
-				    <div class="tab-cell">上海</div>
-				    <div class="tab-cell font0">2018.09.04 <i class="list-arrow"></i></div>
-				    <!--the detail-->
-				    <div class="detail">
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    </div>
-			    </div>
-			    <div class="tab inner-tab">
-			    	<div class="tab-cell">策划经理</div>
-				    <div class="tab-cell hidden-small">2</div>
-				    <div class="tab-cell hidden-small">上海公司</div>
-				    <div class="tab-cell">上海</div>
-				    <div class="tab-cell font0">2018.09.04 <i class="list-arrow"></i></div>
-				    <!--the detail-->
-				    <div class="detail">
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    </div>
-			    </div>
-			    <div class="tab inner-tab">
-			    	<div class="tab-cell">策划经理</div>
-				    <div class="tab-cell hidden-small">2</div>
-				    <div class="tab-cell hidden-small">上海公司</div>
-				    <div class="tab-cell">上海</div>
-				    <div class="tab-cell font0">2018.09.04 <i class="list-arrow"></i></div>
-				    <!--the detail-->
-				    <div class="detail">
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    </div>
-			    </div>
-			    <div class="tab inner-tab">
-			    	<div class="tab-cell">策划经理</div>
-				    <div class="tab-cell hidden-small">2</div>
-				    <div class="tab-cell hidden-small">上海公司</div>
-				    <div class="tab-cell">上海</div>
-				    <div class="tab-cell font0">2018.09.04 <i class="list-arrow"></i></div>
-				    <!--the detail-->
-				    <div class="detail">
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    </div>
-			    </div>
-			    <div class="tab inner-tab">
-			    	<div class="tab-cell">策划经理</div>
-				    <div class="tab-cell hidden-small">2</div>
-				    <div class="tab-cell hidden-small">上海公司</div>
-				    <div class="tab-cell">上海</div>
-				    <div class="tab-cell font0">2018.09.04 <i class="list-arrow"></i></div>
-				    <!--the detail-->
-				    <div class="detail">
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    </div>
-			    </div>
-			    <div class="tab inner-tab">
-			    	<div class="tab-cell">策划经理</div>
-				    <div class="tab-cell hidden-small">2</div>
-				    <div class="tab-cell hidden-small">上海公司</div>
-				    <div class="tab-cell">上海</div>
-				    <div class="tab-cell font0">2018.09.04 <i class="list-arrow"></i></div>
-				    <!--the detail-->
-				    <div class="detail">
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    	<p class="b">职位要求</p>
-				    	<p>沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有一定的领导能力。沟通执行：动手能力强，能快速将想法落地，在有限的资源情况下实现业务目标，精力充沛，沟通能力强，目标清晰以结果为导向，有地，在有限的资源情况下实现业务目标，精力充沛，沟通能</p>
-				    </div>
-			    </div>
+				<div>暂无招聘信息</div>
 			</div>
 			<div class="tab-footer">
-				<div class="list-item"><img class="contact-icon" src="images/join/1_objects@2x_4.png" />上海市静安区彭江路602号E座408室</div>
-				<div class="list-item"><img class="contact-icon" src="images/join/1_objects@2x_5.png" /><a href="tel:02156519508">021-56519508</a></div>
-				<div class="list-item"><img class="contact-icon" src="images/join/1_objects@2x_6.png" /><a href="mailto:admin@elab-plus.com">admin@elab-plus.com</a></div>
+				<div class="list-item"><img class="contact-icon" src="http://yun-image.elab-plus.com/images/join/1_objects@2x_4.png" />上海市静安区彭江路602号E座408室</div>
+				<div class="list-item"><img class="contact-icon" src="http://yun-image.elab-plus.com/images/join/1_objects@2x_5.png" />
+					<a href="tel:02156519508">021-56519508</a>
+				</div>
+				<div class="list-item"><img class="contact-icon" src="http://yun-image.elab-plus.com/images/join/1_objects@2x_6.png" />
+					<a href="mailto:admin@elab-plus.com">admin@elab-plus.com</a>
+				</div>
 			</div>
 		</div>
 
 		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/wow.js"></script>
 		<script>
 			$(function() {
-
+				
 				//show menu
 				$(".menu").on("click", function(e) {
 					$(".main-menu").addClass("active");
@@ -302,22 +167,107 @@
 					$(".main-menu").removeClass("active");
 				});
 				
-				//open job list
-				$('.view-jobs').on('click',function(e){
-				    $(".jobs-layer").fadeIn(500);
+				//hover style
+				$(".who-we-are").on('mouseover', function(e) {
+					$(".footer .left,#leftWave").addClass("active");
+					$(".who-we-are .slide-line,.who-we-are .slide-line1").addClass("active");
 				});
-				//close job list
-				$('.close-bar').on('click',function(e){
-				    $(".jobs-layer").fadeOut(500);
+				$(".who-we-are").on('mouseout', function(e) {
+					$(".footer .left,#leftWave").removeClass("active");
+					$(".who-we-are .slide-line,.who-we-are .slide-line1").removeClass("active").addClass("fadeInUp");
+
 				});
-				
-				//show detail
-				$('.list-arrow').on('click',function(e){
-				    $(this).toggleClass("open");
-				    $(this).parent().next().slideToggle(300);
+
+				$(".what-we-do").on('mouseover', function(e) {
+					$(".footer .right,#rightWave").addClass("active");
+					$(".what-we-do .slide-line,.what-we-do .slide-line1").addClass("active");
+					$("#menuLayer .cases img").attr("src", "images/index/1_objects@2x_5.png");
+				});
+				$(".what-we-do").on('mouseout', function(e) {
+					//setTimeout(function(){
+					$(".footer .right,#rightWave").removeClass("active");
+					$(".what-we-do .slide-line,.what-we-do .slide-line1").removeClass("active").addClass("fadeInUp");
+					$("#menuLayer .cases img").attr("src", "images/index/1_objects@2x_4.png");
+					//},600);
+				});
+
+				//加载职位信息
+				$.get("http://106.14.225.13:8081/rest/listJob", function(result) {
+					console.log(result);
+					var $_list = result.result.list;
+					if($_list.length > 0) {
+						$(".tab-body").empty(); //清空demo
+						for(var i = 0; i < $_list.length; i++) {
+							var tmp = $_list[i];
+							var $_time = tmp['updateTime'];
+                            var $_date = getMyDate($_time);
+							var $_html = `<div class="tab inner-tab">
+			    	<div class="tab-cell">${tmp['postion']}</div>
+				    <div class="tab-cell hidden-small">${tmp['number']}</div>
+				    <div class="tab-cell hidden-small">${tmp['company']}</div>
+				    <div class="tab-cell">${tmp['locaton']}</div>
+				    <div class="tab-cell font0">${$_date} <i class="list-arrow" onclick="showDetail(this,${i})"></i></div>
+				    <div class="detail" id="details${i}"><div class="job-inner"><p>${tmp['description']}</p></div></div>
+				    </div>`;
+							$(".tab-body").append($_html);
+						}
+					}
+
+				});
+
+				//show jobs
+				$('.view-jobs').on('click', function(e) {
+					$(".jobs-layer").fadeIn(800);
+				});
+
+				//关闭jobs
+				$('.close-bar').on('click', function(e) {
+					$(".jobs-layer").fadeOut(800);
 				});
 
 			});
+			
+			function showDetail(obj,i){
+				$(obj).toggleClass("open");
+				$("#details"+i+"").toggleClass("show");
+			}
+
+			function startWow() {
+				//start wow
+				var wow = new WOW({
+					boxClass: 'wow',
+					animateClass: 'animated',
+					offset: 100,
+					mobile: true,
+					live: true
+				});
+				wow.init();
+			}
+
+			function menuShowProjects() {
+				top.closeAndShowPro('careersLayer');
+			}
+
+			function getMyDate(str) {
+				//console.log(new Date(str*1000));
+				var oDate = new Date(str*1000),
+					oYear = oDate.getFullYear(),
+					oMonth = oDate.getMonth() + 1,
+					oDay = oDate.getDate(),
+					oHour = oDate.getHours(),
+					oMin = oDate.getMinutes(),
+					oSen = oDate.getSeconds(),
+					//oTime = oYear + '-' + getzf(oMonth) + '-' + getzf(oDay) + ' ' + getzf(oHour) + ':' + getzf(oMin) + ':' + getzf(oSen); //最后拼接时间
+					oTime = oYear + '-' + getzf(oMonth) + '-' + getzf(oDay); //最后拼接时间
+				return oTime;
+			};
+			//补0操作
+			function getzf(num) {
+				if(parseInt(num) < 10) {
+					num = '0' + num;
+				}
+				return num;
+			}
 		</script>
 
 	</body>

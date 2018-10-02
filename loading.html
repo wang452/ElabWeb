@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ELAB</title>
+    <link rel="stylesheet" type="text/css" href="progress/src/normalize.css">
+    <link rel="stylesheet" type="text/css" href="progress/style.css">
+    <link rel="stylesheet" type="text/css" href="progress/number-pb.css">
+    <link rel="stylesheet" href="css/animate.css" />
+    <!--<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+<div class="container" id="sample-pb">
+    <p class="progress-num" id="progress-num">0</p>
+    <img class="logo" src="progress/img/LOGO.png" />
+
+    <section id="sample-pb" class="sample-pb">
+        <div class="number-pb">
+            <div class="number-pb-shown"></div>
+            <div class="number-pb-num">0%</div>
+        </div>
+    </section>
+    <div id="hidden" class="hidden">
+        <img src="http://yun-image.elab-plus.com/images/index/1_objects@2x.png" class="hidden_img"></img>
+        <!--<img src="http://yun-image.elab-plus.com/images/index/2_objects_1.png" class="hidden_img"></img>
+<img src="http://yun-image.elab-plus.com/images/index/2_objects.png" class="hidden_img"></img>
+<img src="http://yun-image.elab-plus.com/images/index/1_objects_1.png" class="hidden_img"></img>
+<img src="http://yun-image.elab-plus.com/images/index/1_objects_2.png" class="hidden_img"></img>
+<img src="http://yun-image.elab-plus.com/images/index/1_objects_3.png" class="hidden_img"></img>
+<img src="http://yun-image.elab-plus.com/images/index/1_objects_4.png" class="hidden_img"></img>
+<img src="http://yun-image.elab-plus.com/images/index/1_objects_5.png" class="hidden_img"></img>-->
+        <img src="http://yun-image.elab-plus.com/images/index/1_objects_6.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/index/1_objects_7.png" class="hidden_img"></img>
+        <!--<img src="http://yun-image.elab-plus.com/images/index/1_objects_10.png" class="hidden_img"></img>
+<img src="http://yun-image.elab-plus.com/images/index/1_objects_11.png" class="hidden_img"></img>-->
+        <img src="http://yun-image.elab-plus.com/images/index/1_objects.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/index/1_objects@2x_1.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/index/1_objects@2x_2.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/index/1_objects@2x_3.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/index/1_objects@2x_4.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/index/1_objects@2x_5.png" class="hidden_img"></img>
+        <img src="water/img/dmaps/2048x2048/clouds.jpg" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/1.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/BG@2x.jpg" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/bg01.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/bg02.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/bg03.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/Bitmap@2x.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/Bitmap@2x9.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/Group 2@2x01.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/Group 2@2x02.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/Group 2@2x03.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/Group 4@2x.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/Group 7@2x.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/Group@2x.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/Group@2x01.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/Group@2x02.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/Group@2x03.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/ic_clear@2x.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/Line.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/Line0.png" class="hidden_img"></img>
+        <!--<img src="http://yun-image.elab-plus.com/images/LOGO.png" class="hidden_img"></img>-->
+        <img src="http://yun-image.elab-plus.com/images/Main@2x.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/Main@2x01.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/Menu-icon.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/Menu-icon@2x.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/Works-icon@2x.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/contact/1_objects@2x_1.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/contact/1_objects@2x_2.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/contact/1_objects@2x_3.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/contact/1_objects@2x_4.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/contact/1_objects@2x_5.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/contact/1_objects@2x_6.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/contact/1_objects@2x.png" class="hidden_img"></img>
+
+        <img src="http://yun-image.elab-plus.com/images/join/1_objects@2x_1.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/join/1_objects@2x_2.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/join/1_objects@2x_3.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/join/1_objects@2x_4.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/join/1_objects@2x_5.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/join/1_objects@2x_6.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/join/1_objects@2x_7.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/join/1_objects@2x.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/join/2_objects@2x_1.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/join/2_objects@2x.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/join/3_objects@2x_1.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/join/3_objects@2x.png" class="hidden_img"></img>
+
+        <img src="http://yun-image.elab-plus.com/images/do/1_objects@2x_1.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/1_objects@2x_2.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/1_objects@2x_3.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/1_objects@2x_4.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/1_objects@2x_5.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/1_objects@2x_6.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/1_objects@2x_7.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/1_objects@2x_8.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/1_objects@2x_9.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/1_objects@2x_10.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/1_objects@2x_11.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/1_objects@2x_12.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/1_objects@2x_13.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/1_objects@2x_14.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/1_objects@2x_15.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/1_objects@2x.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/2_objects@2x_1.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/2_objects@2x_2.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/2_objects@2x.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/3_objects@2x.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/do/4_objects@2x.png" class="hidden_img"></img>
+
+        <img src="http://yun-image.elab-plus.com/images/projects/1_objects@2x_1.jpg" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/projects/1_objects@2x_2.jpg" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/projects/1_objects@2x_3.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/projects/1_objects@2x_4.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/projects/1_objects@2x.jpg" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/projects/1_objects@2x_6.jpg" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/projects/1_objects@2x_7.jpg" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/projects/1_objects@2x_8.jpg" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/projects/1_objects@2x_9.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/projects/1_objects@2x_10.jpg" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/projects/1_objects@2x_11.jpg" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/projects/1_objects@2x_12.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/projects/1_objects@2x_13.png" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/projects/1_objects@2x_14.jpg" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/projects/1_objects@2x_15.jpg" class="hidden_img"></img>
+        <img src="http://yun-image.elab-plus.com/images/projects/2_objects@2x.png" class="hidden_img"></img>
+    </div>
+</div>
+
+<script src="progress/src/jquery.min.js"></script>
+<!--<script src="progress/src/jquery.velocity.min.js"></script>
+<script src="progress/number-pb.js"></script>
+<script src= "https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.js"></script>-->
+<script>
+    var percent;
+    var Count = $(".hidden_img").length; //图片数量
+    console.log(Count);
+    var Imgs = new Array(Count);
+    var ImgLoaded = 0;
+    var Urls = new Array(Count);
+    for(var i = 0; i < Count; i++) {
+        var $tmp = $(".hidden_img").eq(i).attr("src");
+        Urls[i] = $tmp;
+    }
+
+    //mock
+    var time0 = new Date().getTime();
+    mockloaded = function () {
+        var cur = new Date();
+        var t = (cur.getTime() - time0) / 1000;
+        var s = t | 0;
+        var res = 98;
+        if (s >= 0 && s < 3) {
+            res = 8 * t;
+        }
+        if (s >= 3 && s < 16) {
+            res = 24 + 2 * (t - 3);
+        }
+        if (s >= 16 && s < 96) {
+            res = 50 + 0.5 * (t - 16);
+        }
+        if (s >= 96 && s < 176) {
+            res = 90 + 0.1 * (t - 96);
+        }
+        return res | 0;
+    }
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    setInterval(function () {
+        var mock = mockloaded();
+        $("#progress-num").text(mock);
+        $(".number-pb-shown").css("width", "" + mock + "%");
+    },100);
+
+    //预加载图片
+    function preLoadImgs() {
+        for(var i = 0; i < Imgs.length; i++) {
+            Imgs[i] = new Image();
+            downloadImage(i);
+        }
+    }
+    //加载单个图片
+    function downloadImage(i) {
+        Imgs[i].src = Urls[i];
+        Imgs[i].onLoad = validateImages(i);
+    }
+
+    function validateImages(i) {
+        if(!Imgs[i].complete) {
+            window.setTimeout('downloadImage(' + i + ')', 200);
+        } else if(typeof Imgs[i].naturalWidth != "undefined" && Imgs[i].naturalWidth == 0) {
+            window.setTimeout('downloadImage(' + i + ')', 200);
+        } else {
+            ImgLoaded++;
+            percent = parseInt(ImgLoaded / Count * 100);
+            if(percent == 100) {
+                $("#progress-num").text(percent);
+                $(".number-pb-shown").css("width", "" + percent + "%");
+                // controlBar.reach(100);
+                //加载完毕，关闭loading
+                parent.hideLoading();
+            }
+        }
+    }
+    preLoadImgs();
+
+    /*$(function() {
+var imgs 	= document.querySelectorAll( '.hidden_img' );
+//console.log(imgs.length);
+var total = imgs.length;
+var loaded = 0;
+var progressFunction = function(progress){
+    var num = Math.round(progress);
+    //console.log(num);
+    if(num == 100){
+        //window.location.href='home.html';
+        //top.hideLoading();
+        //console.log("finish");
+    }else{
+        $('#progress-num').text(num);
+    }
+}
+var num = 100;
+var title = $('#progress-num').text('0');
+var controlBar = $('#sample-pb .number-pb').NumberProgressBar({
+duration: 5000,
+percentage: 0,
+    progressFunction : progressFunction
+});
+
+var time0 = new Date().getTime();
+mockloaded = function () {
+    var cur = new Date();
+    var t = (cur.getTime() - time0) / 1000;
+    var s = t | 0;
+    console.log(s);
+    console.log(t);
+    var res = 98;
+    if (s >= 0 && s < 3) {
+        res = 8 * t;
+    }
+    if (s >= 3 && s < 16) {
+        res = 24 + 2 * (t - 3);
+    }
+    if (s >= 16 && s < 96) {
+        res = 50 + 0.5 * (t - 16);
+    }
+    if (s >= 96 && s < 176) {
+        res = 90 + 0.1 * (t - 96);
+    }
+    return res | 0;
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function mockProgress() {
+    var mock = 0;
+    while (mock < 100) {
+        mock = mockloaded()
+        controlBar.reach(mock);
+        console.log(mock);
+        await sleep(100);
+    }
+}
+
+mockProgress();
+
+$('#hidden').imagesLoaded()
+  .always( function( instance ) {
+})
+.done( function( instance ) {
+})
+.fail( function( instance ) {
+})
+.progress( function( instance, image ) {
+console.log("progess");
+var result = image.isLoaded ? 'loaded' : 'broken';
+    loaded += 1;
+    var progress = loaded * 100/total;
+                if( loaded == total){
+        controlBar.reach(progress);
+    }
+});
+
+
+});*/
+</script>
+</div>
+</body>
+
+</html>

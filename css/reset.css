@@ -34,8 +34,9 @@ a{text-decoration: none;}
 /*******font and base*********/
 @font-face {
 	font-family: "AritaHeiti";
-	src: url('../fonts/Arita-Heiti.ttf');
-}
+	/*src: url('../fonts/Arita-Heiti.ttf');*/
+	src: url('http://yun-image.elab-plus.com/font/Arita-Heiti.ttf');
+}/*
 @font-face {
 	font-family: "AritaHeiti-Bold";
 	src: url('../fonts/AritaHeiti-Bold.ttf');
@@ -62,14 +63,14 @@ a{text-decoration: none;}
 }
 
 @font-face {
-	font-family: "DINCond-Light.otf";
+	font-family: "DINCond";
 	src: url('../fonts/DINCond-Light.otf');
 }
 
 @font-face {
 	font-family: "aven";
 	src: url('../fonts/aven.ttf');
-}
+}*/
 .clearfix {
 	zoom: 1;
 }

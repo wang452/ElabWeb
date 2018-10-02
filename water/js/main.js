@@ -51,7 +51,7 @@
         wordWrap: true,
         wordWrapWidth: 400,
         letterSpacing: 20,
-        fontSize: 14
+        fontSize: 60
       });
 
 
@@ -68,7 +68,8 @@
       this.initPixi = function() {
 
         // Add canvas to the HTML
-        document.body.appendChild( renderer.view );
+        //document.body.appendChild( renderer.view );
+        $("#menuLayer .index-body").append( renderer.view );
 
 
         // Add child container to the main container
@@ -89,12 +90,23 @@
           renderer.view.style.webkitTransform = 'translate( 0%, -100% ) scale(1.2)';
           renderer.view.style.transform = 'translate( 0%, -100% ) scale(1.2)';
         } else {
-          renderer.view.style.maxWidth  = '100%';
-					// renderer.view.style.top       = '50%';
-					// renderer.view.style.left      = '50%';
-          renderer.view.style.webkitTransform = 'translate(' + options.x + 'px' +  ' , ' + '-' + (options.screenHeight + options.y) + 'px' + ' )';
-          renderer.view.style.transform = 'translate(' + options.x + 'px' +  ' , ' + (-options.screenHeight + options.y) + 'px' + ' )';
-					renderer.view.style.zIndex = -1;
+          //renderer.view.style.maxWidth  = '100%';
+          renderer.view.style.objectFit = 'cover';
+          if(options.screenWidth>1440){
+          	renderer.view.style.width     = '135%';
+          }else{
+          	renderer.view.style.width     = '100%';
+          }
+          renderer.view.style.height    = '100%';
+		  // renderer.view.style.top       = '50%';
+		  // renderer.view.style.left      = '50%';
+          //renderer.view.style.webkitTransform = 'translate(' + options.x + 'px' +  ' , ' + '-' + (options.screenHeight + options.y) + 'px' + ' )';
+          //renderer.view.style.transform = 'translate(' + options.x + 'px' +  ' , ' + (-options.screenHeight + options.y) + 'px' + ' )';
+		  renderer.view.style.zIndex = 20;
+		  renderer.view.style.overflow = "hidden";
+		  renderer.view.className="wow fadeIn slideCanvas";
+		  renderer.view.setAttribute("data-wow-duration","2s");
+		  renderer.view.setAttribute("data-wow-delay","1s");
         }
 
 
@@ -133,6 +145,7 @@
       /// ---------------------------
       this.loadPixiSprites = function( sprites ) {
 
+        //console.log("the randerer.widht: "+renderer.width);
 
         var rSprites = options.sprites;
         var rTexts   = options.texts;
@@ -141,13 +154,16 @@
           var texture   = new PIXI.Texture.fromImage( sprites[i] );
           var image     = new PIXI.Sprite( texture );
 
+          console.log(texture);
+
           if ( rTexts ) {
             var richText = new PIXI.Text( rTexts[i], style);
             image.addChild(richText);
 
-            richText.anchor.set(0.5);
-            richText.x = image.width / 2;
-            richText.y = image.height / 2;
+            //richText.anchor.set(0.5);
+            console.log("the i w: "+image.width);
+            richText.x = image.width;
+            richText.y = image.height;
           }
 
           if ( options.centerSprites === true ) {

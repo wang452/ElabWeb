@@ -33,7 +33,7 @@
     } else {
       this.percentage = percentage;
     }
-    console.log('reach: ', this.last_percentage, this.percentage, this.calDuration());
+    //console.log('reach: ', this.last_percentage, this.percentage, this.calDuration());
     this.moveShown();
     this.moveNum();
   }
@@ -43,7 +43,7 @@
   }
 
   NumberProgressBar.prototype.moveShown = function() {
-    console.log('moveShown: ', this.percentage);
+    //console.log('moveShown: ', this.percentage);
     this.$shownBar.velocity({
       width: this.percentage + '%'
     }, {
@@ -52,7 +52,7 @@
   }
 
   NumberProgressBar.prototype.moveNum = function() {
-    console.log('moveNum: ', this.percentage);
+    //console.log('moveNum: ', this.percentage);
     var self = this;
     var left = this.width * this.percentage / 100.0;
     var numWidth = this.$num.width();

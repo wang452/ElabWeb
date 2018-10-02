@@ -1,9 +1,12 @@
 /*滚动轴*/
 
 body {
-	font-family: "微软雅黑";
+	font-family: "AritaHeiti","微软雅黑";
+	overflow-x: hidden;
 }
-
+::-webkit-scrollbar{
+	width: 0;
+}
 :-webkit-scrollbar-track {
 	background-color: #F5F5F5;
 }
@@ -19,41 +22,6 @@ body {
 ::-webkit-scrollbar {
 	width: 6px;
 	background-color: #F5F5F5;
-}
-
-@font-face {
-	font-family: "AritaHeiti-Bold";
-	src: url('../fonts/AritaHeiti-Bold.ttf');
-}
-
-@font-face {
-	font-family: "AritaHeiti-Light.ttf";
-	src: url('../fonts/AritaHeiti-Light.ttf');
-}
-
-@font-face {
-	font-family: "DINCondensed";
-	src: url('../fonts/DIN Condensed Bold.ttf');
-}
-
-@font-face {
-	font-family: "DINCondensed";
-	src: url('../fonts/aven.ttf');
-}
-
-@font-face {
-	font-family: "FZDeSaiHei125S";
-	src: url('../fonts/FZDeSaiHei125S-R-GB.ttf');
-}
-
-@font-face {
-	font-family: "DINCond-Light.otf";
-	src: url('../fonts/DINCond-Light.otf');
-}
-
-@font-face {
-	font-family: "aven";
-	src: url('../fonts/aven.ttf');
 }
 
 .fl {
@@ -88,13 +56,21 @@ body {
 }
 
 .w_1440 {
-	width: 1440px;
+	width: 1440px;/*1440px*/
 	margin: 0 auto;
 }
-
+.close-bar{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background: url(../images/projects/1_objects@2x_3.png) no-repeat 50% 50%;
+	background-size: contain;
+	cursor: pointer;
+}
 .head_box {
 	position: relative;
-	padding: 28px 0;
+	padding: 20px 0;
+	height: 24px;
 }
 
 .menu_btn {
@@ -131,13 +107,13 @@ body {
 .csr h3 {
 	font-size: 76px;
 	color: #fff;
-	font-family: "AritaHeiti-Bold";
+	font-family: "AritaHeiti";
 }
 
 .csr_text {
 	font-size: 43px;
 	color: #fff;
-	font-family: "AritaHeiti-Bold";
+	font-family: "AritaHeiti";
 }
 
 .a_btn {
@@ -146,16 +122,16 @@ body {
 }
 
 .a_btn a {
-	width: 260px;
-	height: 80px;
+	width: 160px;
+	height: 50px;
 	font-size: 16px;
 	color: #000;
 	text-align: center;
 	display: inline-block;
-	line-height: 80px;
+	line-height: 50px;
 	background: #fff;
 	border-radius: 40px;
-	font-family: "AritaHeiti-Bold";
+	font-family: "AritaHeiti";
 }
 
 .s_v {
@@ -166,7 +142,7 @@ body {
 	font-size: 20px;
 	color: #fff;
 	line-height: 1.6;
-	font-family: "AritaHeiti-Light.ttf";
+	font-family: "AritaHeiti";
 	max-width: 800px;
 	margin: 0 auto 40px;
 	text-align: left;
@@ -180,7 +156,7 @@ body {
 .section2 h3 {
 	font-size: 40px;
 	color: #fff;
-	font-family: "AritaHeiti-Bold";
+	font-family: "AritaHeiti";
 	margin-bottom: 55px;
 }
 
@@ -196,7 +172,7 @@ body {
 .section3>h3 {
 	font-size: 40px;
 	color: #fff;
-	font-family: "AritaHeiti-Bold";
+	font-family: "AritaHeiti";
 }
 
 .section3 {
@@ -211,14 +187,14 @@ body {
 .yewu li h3 {
 	font-size: 120px;
 	color: #3dadc0;
-	font-family: "DINCondensed";
+	font-family: "AritaHeiti";
 }
 
 .yewu li p {
 	font-size: 25px;
 	color: #fff;
 	margin-top: 23px;
-	font-family: "AritaHeiti-Light.ttf";
+	font-family: "AritaHeiti";
 }
 
 .section4 {
@@ -235,6 +211,8 @@ body {
 .section4_list li {
 	overflow: hidden;
 	margin-bottom: 82px;
+	position: relative;
+	z-index: 5;
 }
 
 .section4_list_box {
@@ -266,13 +244,14 @@ body {
 	left: 50%;
 	margin-left: 1px;
 	background: #4e5464;
+	z-index: 1;
 }
 
 .h3 {
 	font-size: 86px;
 	position: relative;
 	color: #41acc0;
-	font-family: "AritaHeiti-Bold";
+	font-family: "AritaHeiti";
 	line-height: 80%;
 }
 
@@ -286,7 +265,7 @@ body {
 	color: #fff;
 	margin-top: 15px;
 	position: relative;
-	font-family: "AritaHeiti-Light.ttf";
+	font-family: "AritaHeiti";
 }
 
 .p1:after {
@@ -343,7 +322,7 @@ body {
 	margin: auto;
 	position: relative;
 	z-index: 5;
-	font-family: "AritaHeiti-Bold";
+	font-family: "AritaHeiti";
 }
 
 .section5 {
@@ -363,7 +342,7 @@ body {
 	font-size: 42px;
 	color: #fff;
 	margin-bottom: 160px;
-	font-family: "AritaHeiti-Bold";
+	font-family: "AritaHeiti";
 }
 
 #section4 {
@@ -417,7 +396,7 @@ body {
 	padding: 33px 30px;
 	overflow: hidden;
 	position: relative;
-	font-family: "AritaHeiti-Light.ttf";
+	font-family: "AritaHeiti";
 }
 
 .progress>p span {
@@ -444,12 +423,15 @@ body {
 	position: relative;
 	overflow: hidden;
 	height: 983px;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
 .con_t img {
+	width: 70%;
 	max-width: 100%;
 	display: block;
-	margin: 118px auto 0;
+	margin: 50px auto 0;
 	position: relative;
 	z-index: 5;
 }
@@ -457,7 +439,7 @@ body {
 .cai {
 	font-size: 131px;
 	color: #fff;
-	font-family: "AritaHeiti-Bold";
+	font-family: "AritaHeiti";
 	position: absolute;
 	top: 294px;
 	left: 68px;
@@ -479,7 +461,7 @@ body {
 	font-size: 20px;
 	color: #fff;
 	line-height: 1.6;
-	font-family: "AritaHeiti-Bold";
+	font-family: "AritaHeiti";
 	position: absolute;
 	top: 542px;
 	left: 28px;
@@ -489,7 +471,7 @@ body {
 .h33 {
 	font-size: 36px;
 	color: #fff;
-	font-family: "AritaHeiti-Bold";
+	font-family: "AritaHeiti";
 	position: absolute;
 	top: 122px;
 	right: 256px;
@@ -511,21 +493,21 @@ body {
 
 .work p {
 	font-size: 18px;
-	font-family: "AritaHeiti-Light.ttf";
+	font-family: "AritaHeiti";
 }
 
 .work h3 {
 	font-size: 20px;
-	font-family: "AritaHeiti-Bold";
+	font-family: "AritaHeiti";
 }
 
 .n {
 	font-size: 92px;
 	color: #fff;
-	font-family: "DINCondensed";
+	font-family: "AritaHeiti";
 	position: absolute;
 	top: 441px;
-	right: 168px;
+	right: 138px;
 	z-index: 3;
 }
 
@@ -533,7 +515,7 @@ body {
 .w {
 	font-size: 20px;
 	color: #fff;
-	font-family: "AritaHeiti-Light.ttf";
+	font-family: "AritaHeiti";
 }
 
 .gx {
@@ -573,14 +555,14 @@ body {
 .s_inner {
 	width: 1060px;
 	margin: 0 auto;
-	font-family: "AritaHeiti-Bold";
+	font-family: "AritaHeiti";
 }
 
 .swiper-box h3 {
 	font-size: 1.6em;
 	color: #fff;
 	text-align: center;
-	font-family: "aven";
+	font-family: "AritaHeiti";
 }
 
 .sm {
@@ -595,7 +577,7 @@ body {
 	color: #f7f7f7;
 	line-height: 1.65;
 	margin-top: 154px;
-	font-family: "AritaHeiti-Light.ttf";
+	font-family: "AritaHeiti";
 }
 
 .span {
@@ -620,7 +602,7 @@ body {
 }
 
 .container {
-	width: 1200px;
+	width: 100%;
 	margin: 0 auto;
 	background: url(../images/BG@2x.jpg) center no-repeat;
 	background-size: cover;
@@ -639,6 +621,7 @@ body {
 }
 
 .sb {
+	width: 100%;
 	position: relative;
 	height: 1025px;
 }
@@ -653,7 +636,7 @@ body {
 
 .shuzi span {
 	font-size: 30px;
-	font-family: "AritaHeiti-Light.ttf";
+	font-family: "AritaHeiti";
 	color: #fff;
 }
 
@@ -662,9 +645,9 @@ body {
 }
 
 .shuzi strong {
-	font-size: 300px;
+	font-size: 250px;
 	color: #fff;
-	font-family: "DINCond-Light.otf";
+	font-family: "AritaHeiti";
 }
 
 .sp1 {
@@ -785,7 +768,7 @@ body {
 		margin-bottom: 1rem;
 	}
 	.more {
-		width: 2.6rem;
+		width: 154px;
 		height: .8rem;
 		border-radius: .4rem;
 		font-size: .25rem;
@@ -839,7 +822,7 @@ body {
 		padding-bottom: 40px;
 	}
 	.swiper-box h3 {
-		font-size: .32rem;
+		font-size: .28rem;
 	}
 	.sm,
 	.sub {
@@ -925,9 +908,9 @@ body {
 		padding: 4rem 0 0;
 		height: 9.06rem;
 	}
-	.logo img {
+	/*.logo img {
 		width: .42rem;
-	}
+	}*/
 	.menu_btn img {
 		width: .32rem;
 	}
@@ -939,7 +922,7 @@ body {
 		font-size: 1.3rem;
 	}
 	.shuzi span {
-		font-size: .5rem;
+		font-size: .4rem;
 	}
 	.shuzi {
 		top: 2.3rem;
@@ -972,13 +955,61 @@ body {
 
 @media only screen and (min-width: 576px) {
 	.shuzi {
-		top: 13%;
+		top: 20%;
 	}
 	.shuzi p:nth-child(2),
 	.shuzi p:nth-child(3) {
 		display: inline-block;
 		width: 49%;
 		vertical-align: top;
+	}
+}
+
+/***pad**/
+@media only screen and (max-width: 1024px){
+	/*.s_inner h3 span {
+		display: block;
+	}*/
+	.cai {
+		font-size: .6rem;
+		top: 1.34rem;
+		left: .68rem;
+	}
+	.line {
+		width: .8rem;
+		height: .1rem;
+		top: 2.24rem;
+		left: .71rem;
+	}
+	.h33 {
+		font-size: .36rem;
+		top: 0.82rem;
+		right: 0.56rem;
+	}
+	.n {
+		font-size: .7rem;
+		top: 5.2rem;
+		right: 0;
+	}
+	.p_p {
+		font-size: .2rem;
+		top: 6.02rem;
+		left: .38rem;
+		max-width: 3.52rem;
+	}
+	.gx {
+		right: 0rem;
+		bottom: 1.4rem;
+		max-width: 60%;
+	}
+	.w {
+		bottom: 0.3rem;
+		right: 20%;
+	}
+	.gx,
+	.w {
+		font-size: .22rem;
+		line-height: 90%;
 	}
 }
 
@@ -1028,4 +1059,259 @@ body {
 		font-size: .22rem;
 		line-height: 90%;
 	}
+}
+
+.top-menu {
+	width: 100%;
+	padding: 20px 0;
+	height: 64px;
+	font-size: 0;
+	line-height: 24px;
+	position: relative;
+	z-index: 10;
+	/*background: url(../images/menu-bg.jpg) no-repeat;
+	background-size: 100% 100%;
+	opacity: 0;*/
+}
+.logo {
+	width: 4.7%;
+	position: absolute;
+	bottom: 0%;
+	left: 4%;
+	cursor: pointer;
+}
+.inner-icon {
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+.menu {
+	width: 3.4%;
+	position: absolute;
+	top: 35%;
+	left: 48.3%;
+	cursor: pointer;
+}
+
+.cases {
+	width: 3.4%;
+	position: absolute;
+	top: 45;
+	right: 4%;
+	cursor: pointer;
+}
+
+/***left and right slide menu***/
+
+.who-we-are,
+.what-we-do {
+	width: 20%;
+	line-height: 30px;
+	height: 30px;
+	position: absolute;
+	z-index: 10;
+	left: -8%;
+	top: 45%;
+	color: #1b2030;
+	font-size: 14px;
+	text-align: center;
+	font-weight: 700;
+	/*transform: rotate(90deg);*/
+	cursor: pointer;
+	transition: all linear 0.6s;
+}
+
+.slide-line {
+	position: absolute;
+	left: 50%;
+	top: 70%;
+	width: 1px;
+	height: 50px;
+	margin: 3px auto 0;
+	font-size: 0px;
+	background: #fff;
+	transform: translateY(3%);
+	transition: all ease 0.8s;
+}
+.slide-line1 {
+	position: absolute;
+	left: 50%;
+	top: -210px;
+	width: 1px;
+	height: 200px;
+	margin: 3px auto 0;
+	font-size: 0px;
+	background: #fff;
+	transform: translateY(-100px);
+	transition: all ease 0.8s;
+	opacity: 0;
+}
+.what-we-do {
+	left: auto;
+	right: -8%;
+	transform: rotate(-90deg);
+}
+
+.who-we-are a,
+.what-we-do a {
+	color: #fff;
+}
+
+.who-we-are .slide-line.active {
+	transition: all ease 0.8s;
+	transform: translateY(-110%);
+}
+
+.what-we-do:hover,
+.who-we-are:hover {
+	color: #fff;
+}
+.what-we-do:hover a,
+.who-we-are:hover a{
+	color: #fff;
+}
+.what-we-do .slide-line.active,
+.who-we-are .slide-line.active {
+	transition: all ease 0.8s;
+	transform: translateY(50px);
+	background: #fff;
+}
+.what-we-do .slide-line1.active,
+.who-we-are .slide-line1.active {
+	transition: all ease 0.8s;
+	transform: translateY(0px);
+	background: #fff;
+	opacity: 1;
+}
+
+/***middle**/
+@media only screen and (max-width: 1024px) {
+	.logo {
+		width: 6%;
+	}
+	.menu {
+		width: 4.5%;
+	}
+	.cases {
+		width: 4.5%;
+	}
+}
+
+
+/***middle portrait***/
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+	.logo {
+		width: 8%;
+	}
+	.menu {
+		width: 6.5%;
+	}
+	.cases {
+		width: 6.5%;
+	}
+}
+
+
+/***small**/
+
+@media only screen and (max-width: 576px) and (-webkit-min-device-pixel-ratio:2) {
+	.logo {
+		width: 18%;
+		position: absolute;
+		left: 42.5%;
+		cursor: pointer;
+		bottom: 15%;
+	}
+	.menu {
+		width: 13.4%;
+		position: absolute;
+		bottom: 0;
+		left: 5%;
+		cursor: pointer;
+	}
+	.cases {
+		width: 13.4%;
+	}
+	.who-we-are,
+    .what-we-do{
+    	display: none;
+    }
+}
+
+.main-menu {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	max-height: 1500px;
+	background: #34B5CB;
+	transform: translateY(-100%);
+	opacity: 0;
+	transition: all ease 0.8s
+}
+
+.main-menu.active {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.menu-close {
+	width: 40px;
+	height: 40px;
+	margin: 30px auto;
+	color: #ffffff;
+	font-family: "Arial";
+	font-size: 40px;
+	cursor: pointer;
+	background: url(../images/projects/1_objects@2x_3.png) no-repeat 50% 50%;
+	background-size: contain;
+	transition: all ease 1s;
+	transform: rotate(0);
+}
+.menu-close:hover{
+	transform: rotate(360deg);
+}
+.menu-list {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 10%;
+}
+
+.menu-list li {
+	width: 100%;
+	margin-bottom: 1%;
+	color: #fff;
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: 4.689653px;
+	font-family: 'AritaHeiti';
+}
+
+.menu-list li small {
+	width: 100%;
+	display: block;
+	font-size: 16px;
+}
+
+.menu-list li a {
+	color: #fff;
+}
+
+.slider{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	z-index: 30;
+}
+
+.slider ul{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
 }

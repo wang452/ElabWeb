@@ -1,112 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title></title>
-	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-	<meta name="description" content="">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/index.css">
-	<script src="js/jquery-1.11.3.min.js"></script>
-	<script src="js/jquery.SuperSlide.2.1.1.js"></script>
-	<script src="js/rem.js"></script>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="description" content="">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/index.css?v=1.0001">
+		<link rel="stylesheet" href="css/animate.min.css"></link>
+		<link rel="stylesheet" href="css/unslider.css"></link>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<!--<script src="js/jquery.SuperSlide.2.1.1.js"></script>-->
+		<script src="js/rem.js"></script>
+		<script>
+			window['adaptive'].desinWidth = 750;
+			window['adaptive'].init();
+		</script>
+		<style type="text/css">
+			.hj_box {
+				position: relative;
+			}
+			
+			.unslider {
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 20;
+			}
+			
+			.hj_box h3 {
+				position: absolute;
+				left: 0;
+				top: 40%;
+				z-index: 30;
+				width: 100%;
+				text-align: center;
+			}
+			
+			.hj_box .more {
+				position: absolute;
+				z-index: 30;
+				left: calc( ( 100% - 154px ) / 2 );
+				top: 70%;
+			}
+		</style>
+	</head>
+
+	<body class="bg01">
+		<div class="container">
+			<!--top menu-->
+			<div class="top-menu wow fadeInDown" data-wow-duration="1s" data-wow-delay="2s">
+				<div class="logo">
+					<a href="javascript:parent.showIndex();"><img class="inner-icon" src="http://yun-image.elab-plus.com/images/contact/1_objects@2x_3.png" /></a>
+				</div>
+				<div class="menu"><img class="inner-icon" src="http://yun-image.elab-plus.com/images/contact/1_objects@2x_4.png" /></div>
+				<div class="cases">
+					<a href="javascript:innerShowPro();"><img class="inner-icon" src="http://yun-image.elab-plus.com/images/contact/1_objects@2x_5.png" /></a>
+				</div>
+			</div>
+
+			<div class="what-we-do wow fadeInUpIndex1" data-wow-duration="1s" data-wow-delay="4s">
+				<p>
+					<a href="javascript:parent.closeWho();parent.showDo();">我们在做什么</a>
+				</p>
+				<div class="slide-line"></div>
+				<div class="slide-line1"></div>
+			</div>
+			<!--main menu-->
+			<div class="main-menu">
+				<div class="menu-close"></div>
+				<ul class="menu-list">
+					<li>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.closeWho();parent.showWho();">我们是谁<small>WHO WE ARE</small></a>
+					</li>
+					<li>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.closeWho();parent.showDo();">我们在做什么<small>WHAT WE DO</small></a>
+					</li>
+					<li>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.closeWho();parent.showProjects();">作品案例<small>PROJECTS</small></a>
+					</li>
+					<li>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.closeWho();parent.showCareers();">加入我们<small>CAREERS</small></a>
+					</li>
+					<li>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.closeWho();parent.showContact();">联系我们<small>CONTACTS</small></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="section1 wow fadeIn" data-wow-duration="1s" data-wow-delay="2s">
+				<div class="wrap csr">
+					<h3 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="3s">探索·启程</h3>
+					<p class="csr_text wow fadeInUp" data-wow-duration="1s" data-wow-delay="3s">2015年创业之初,创始人蔡雪梅TED演讲</p>
+					<div class="a_btn clearfix">
+						<a href="#" class="s_v wow fadeInRight" data-wow-duration="1s" data-wow-delay="3s">查看视频</a>
+						<a href="javascript:linkToInner('chuangshiren.html');" class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="3s">了解创始人</a>
+					</div>
+				</div>
+			</div>
+			<div class="section2 wrap wow fadeInUp" data-wow-duration="1s">
+				<h3>公司简介</h3>
+				<p>ELAB是⼀一家以技术和数据驱动的新型未来⼈人居空间开发的互联⽹网平台型公司。我们以客户需 求为核⼼心，实现创新性产品的预制性开 发，并为开发商提供系统性整体解决⽅方案。</p>
+				<p>ELAB致⼒力力于实现居者及开发企业的价值最⼤大化。通过技术、数据、产品赋能，逆转传统从⼟土 地到客户充满不不确定性⾼高⻛风险的 开发 旧模式(B2C)为从客户到⼟土地的新型房地产开发模式 (C2B)，从源头解⾏行行业痛点，帮助企业⻓长期可持续发展，同时从居者出发， 挖掘居者真实居 住需求，打造未来⼈人居产品。</p>
+			</div>
+			<div class="section3 wrap">
+				<h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">业务范畴</h3>
+				<ul class="yewu clearfix ">
+					<li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+						<h3>01</h3>
+						<p>开发需求<br />线上平台前策</p>
+					</li>
+					<li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+						<h3>02</h3>
+						<p>创新产品原型输出<br/>及在线测试</p>
+					</li>
+					<li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+						<h3>03</h3>
+						<p>全案规划策划<br />及创新设计</p>
+					</li>
+					<li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+						<h3>04</h3>
+						<p>大麦SaaS智能营销</p>
+					</li>
+				</ul>
+			</div>
+			<div class="section4">
+				<ul class="section4_list">
+					<li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+						<div class="section4_list_box">
+							<h3 class="h3 latest">20<br />18</h3>
+							<p class="p p1">NOW-B轮进行中</p>
+						</div>
+					</li>
+					<li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+						<div class="section4_list_box">
+							<h3 class="h3 tag">08</h3>
+							<p class="p">大麦SaaS智能营销系列产品-E看房APP上线</p>
+						</div>
+					</li>
+					<li class="sec wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+						<div class="section4_list_box">
+							<h3 class="h3 tag">06</h3>
+							<p class="p">大麦SaaS智能营销系列产品-E看房APP上线</p>
+						</div>
+					</li>
+					<li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+						<div class="section4_list_box">
+							<h3 class="h3 tag">05</h3>
+							<p class="p">大麦SaaS智能营销系列产品——WILL APP,正式上线</p>
+							<p class="p">大麦SaaS智能营销系列产品——投放宝,正式上线</p>
+						</div>
+					</li>
+					<li>
+						<a href="javascript:linkToInner('more.html');" class="more wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">查看更多</a>
+					</li>
+				</ul>
+			</div>
+			<div class="section5">
+				<div class="wrap hj_box">
+					<div class="slider">
+						<ul>
+							<li><img src="images/slider/1.jpg" /><h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片1</h3></li>
+							<li><img src="images/slider/2.jpg" /><h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片2</h3></li>
+							<li><img src="images/slider/3.jpg" /><h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片3</h3></li>
+							<li><img src="images/slider/4.jpg" /><h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片4</h3></li>
+							<li><img src="images/slider/5.jpg" /><h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片5</h3></li>
+							<li><img src="images/slider/7.jpg" /><h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片6</h3></li>
+							<li><img src="images/slider/8.jpg" /><h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片7</h3></li>
+							<li><img src="images/slider/9.jpg" /><h3 class="wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">各职能公司的介绍+公<br />司环境，配合照片8</h3></li>
+						</ul>
+					</div>
+					<a href="javascript:subShowJoin();" class="more wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="1s">加入我们</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/index.js"></script>
+	<script src="js/wow.js"></script>
+	<script src="js/unslider-min.js"></script>
+	<script src="js/jquery.event.move.js"></script>
+	<script src="js/jquery.event.swipe.js"></script>
 	<script>
-		window['adaptive'].desinWidth = 750;
-		window['adaptive'].init();
+		$(function() {
+
+			//show menu
+			$(".menu").on("click", function(e) {
+				$(".main-menu").addClass("active");
+			});
+			//close menu
+			$('.menu-close').on('click', function(e) {
+				$(".main-menu").removeClass("active");
+			});
+
+			//hover style
+			$(".what-we-do").on('mouseover mouseout', function(e) {
+				$(".footer .right,#rightWave").toggleClass("active");
+			});
+
+			$(".what-we-do").on('mouseover', function(e) {
+				$(".footer .right,#rightWave").addClass("active");
+				$(".what-we-do .slide-line,.what-we-do .slide-line1").addClass("active");
+				$("#menuLayer .cases img").attr("src", "images/index/1_objects@2x_5.png");
+			});
+			$(".what-we-do").on('mouseout', function(e) {
+				//setTimeout(function(){
+				$(".footer .right,#rightWave").removeClass("active");
+				$(".what-we-do .slide-line,.what-we-do .slide-line1").removeClass("active").addClass("fadeInUp");
+				$("#menuLayer .cases img").attr("src", "images/index/1_objects@2x_4.png");
+				//},600);
+			});
+
+			//返回
+			$('.menu_btn').on('click', function(e) {
+				top.closeWho();
+			});
+
+			//加载完毕，开始slider
+			var mySlider = $('.slider').unslider({
+				infinite: true,
+				nav: false,
+				arrows: false,
+				autoplay: true,
+				delay: 4000,
+				speed: 800
+				//index: s //初始化显示哪个礼品的索引
+			});
+
+		});
+
+		function startWow() {
+			//start wow
+			var wow = new WOW({
+				boxClass: 'wow',
+				animateClass: 'animated',
+				offset: 0,
+				mobile: true,
+				live: true
+			});
+			wow.init();
+		}
+
+		function subShowJoin() {
+			parent.showIndex();
+			setTimeout(function(){
+				parent.showCareers();
+			},1000);
+		}
+		
+		function innerShowPro(){
+			parent.showIndex();
+			setTimeout(function(){
+				parent.showProjects();
+			},1000);
+		}
+
+		function linkToInner(url) {
+			$('html body').fadeOut(500);
+			setTimeout(function() {
+				self.location.href = url;
+			}, 500);
+		}
 	</script>
-</head>
-<body class="bg01">
-	<div class="container">
-		<div class="header">
-			<div class="wrap head_box clearfix">
-				<a href="" class="logo">
-					<img src="images/Group 7@2x.png" alt="">
-				</a>
-				<div class="menu_btn">
-					<img src="images/Menu-icon@2x.png" alt="">
-					<span>菜单</span>
-				</div>
-				<div class="work_z menu_btn">
-					<img src="images/Works-icon@2x.png" alt="">
-					<span>菜单</span>
-				</div>
-			</div>
-		</div>
-		<div class="section1">
-			<div class="wrap csr">
-				<h3>探索·启程</h3>
-				<p class="csr_text">2015年创业之初,创始人蔡雪梅TED演讲</p>
-				<div class="a_btn clearfix">
-					<a href="" class="s_v">查看视频</a>
-					<a href="">了解创始人</a>
-				</div>
-			</div>
-		</div>
-		<div class="section2 wrap">
-			<h3>公司简介</h3>
-			<p>我们以客户需求为核心，实现未来人居创新产品预制化开发——柔性开发，并为开发商提供系统性整体解决方案。</p>
-			<p>ELAB致力于实现居者及开发企业的价值最大化。通过技术、数据、产品赋能，逆转传统从土地到客户充满不确定性高风险的开发旧模式（B2C）为从客户到土地的新型房地产开发模式（C2B），从源头解行业痛点，帮助企业长期可持续发展，同时从居者出发，挖掘居者真实居住需求，打造未来人居产品。</p>
-		</div>
-		<div class="section3 wrap">
-			<h3>业务范畴</h3>
-			<ul class="yewu clearfix ">
-				<li>
-					<h3>01</h3>
-					<p>开发需求<br />线上平台前策</p>
-				</li>
-				<li>
-					<h3>02</h3>
-					<p>创新产品原型输出<br/>及在线测试</p>
-				</li>
-				<li>
-					<h3>03</h3>
-					<p>全案规划策划<br />及创新设计</p>
-				</li>
-				<li>
-					<h3>04</h3>
-					<p>大麦SaaS智能营销</p>
-				</li>
-			</ul>
-		</div>
-		<div class="section4">
-			<ul class="section4_list">
-				<li>
-					<div class="section4_list_box">
-						<h3 class="h3 latest">20<br />18</h3>
-						<p class="p p1">NOW-B轮进行中</p>
-					</div>
-				</li>
-				<li>
-					<div class="section4_list_box">
-						<h3 class="h3 tag">08</h3>
-						<p class="p">大麦SaaS智能营销系列产品-E看房APP上线</p>
-					</div>
-				</li>
-				<li class="sec">
-					<div class="section4_list_box">
-						<h3 class="h3 tag">06</h3>
-						<p class="p">大麦SaaS智能营销系列产品-E看房APP上线</p>
-					</div>
-				</li>
-				<li>
-					<div class="section4_list_box">
-						<h3 class="h3 tag">05</h3>
-						<p class="p">大麦SaaS智能营销系列产品——WILL APP,正式上线</p>
-						<p class="p">大麦SaaS智能营销系列产品——投放宝,正式上线</p>
-					</div>
-				</li>
-				<li>
-					<a href="" class="more">查看更多</a>
-				</li>
-			</ul>
-		</div>
-		<div class="section5">
-			<div class="wrap hj_box">
-				<h3>各职能公司的介绍+公<br />司环境，配合照片</h3>
-				<a href="" class="more">加入我们</a>
-			</div>
-		</div>
-	</div>
-</body>
-<script src="js/index.js"></script>
+
 </html>

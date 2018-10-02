@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0,user-scalable=no'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+		<title>WHAT WE DO | ELAB</title>
+		<link rel="stylesheet" href="css/reset.css"></link>
+		<link rel="stylesheet" href="css/style.css"></link>
+		<link rel="stylesheet" href="css/animate.min.css"></link>
+		<style type="text/css">
+			html,
+			body {
+				height: auto;
+			}
+			
+			#whatWeDo {
+				width: 100%;
+				height: auto;
+				background: #1b2030;
+				max-width: none;
+				overflow-x: hidden;
+				overflow-y: auto;
+			}
+			
+			.who-we-are {
+				top: 500px;
+				transform: rotate(90deg);
+			}
+			
+			.who-we-are a {
+				color: #fff;
+			}
+			
+			.slide-line {
+				background: #fff;
+			}
+			
+			.slide-line1 {
+				background: #fff;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="whatWeDo" class="page">
+
+			<!--top menu-->
+			<div class="top-menu wow fadeInDown" data-wow-duration="1s" data-wow-delay="2s">
+				<div class="logo">
+					<a href="javascript:parent.showIndex();"><img class="inner-icon" src="http://yun-image.elab-plus.com/images/contact/1_objects@2x_3.png" /></a>
+				</div>
+				<div class="menu"><img class="inner-icon" src="http://yun-image.elab-plus.com/images/contact/1_objects@2x_4.png" /></div>
+				<div class="cases">
+					<a href="javascript:parent.closeDo();parent.showProjects();"><img class="inner-icon" src="http://yun-image.elab-plus.com/images/contact/1_objects@2x_5.png" /></a>
+				</div>
+			</div>
+
+			<div class="who-we-are wow fadeInUpIndex" data-wow-duration="1s" data-wow-delay="4s">
+				<p>
+					<a href="javascript:parent.showIndex();parent.showWho();">我们是谁</a>
+				</p>
+				<div class="slide-line"></div>
+				<div class="slide-line1"></div>
+			</div>
+			<!--main menu-->
+			<div class="main-menu">
+				<div class="menu-close"></div>
+				<ul class="menu-list">
+					<li>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.showIndex();parent.showWho();">我们是谁<small>WHO WE ARE</small></a>
+					</li>
+					<li>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.showIndex();parent.showDo();">我们在做什么<small>WHAT WE DO</small></a>
+					</li>
+					<li>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.showIndex();parent.showProjects();">作品案例<small>PROJECTS</small></a>
+					</li>
+					<li>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.showIndex();parent.showCareers();">加入我们<small>CAREERS</small></a>
+					</li>
+					<li>
+						<a href="javascript:$('.main-menu').removeClass('active');parent.showIndex();parent.showContact();">联系我们<small>CONTACTS</small></a>
+					</li>
+				</ul>
+			</div>
+
+			<!--main-->
+			<div class="project-list">
+
+				<div id="do1" class="project-item-detail wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">
+					<img class="img1" src="http://yun-image.elab-plus.com/images/do/1_objects@2x.png" />
+					<img class="img2 wow fadeIn" data-wow-duration="1s" data-wow-delay="3s" src="http://yun-image.elab-plus.com/images/do/1_objects@2x_1.png" />
+					<div class="words1 wow fadeInDown" data-wow-duration="1s" data-wow-delay="4s">技术和数据驱动<strong>柔性地产开发预制平台</strong><span>Flexible and Prefabricated Development Platform for Real Estate with PropTech and Big Data</span></div>
+					<div class="words2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="4s">后地产时代到来<br/>The Coming Real Estate Era
+						<p>ELAB从事以客户需求为核心的预制化开发——柔性开发，并为开发商提供系统性整体解决方案。<br/>通过产品技术、数据赋能，改变传统开发从土地到人的开发模式，实现居者及企业价值的最大化。</p>
+					</div>
+				</div>
+
+				<div id="do2" class="project-item-detail">
+					<img class="inner-icon wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" src="http://yun-image.elab-plus.com/images/do/1_objects@2x_2.png" />
+					<div class="words1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.5s">上居-未来人居预制系统
+						<p>DESIGN FOR THE FUTURE</p>
+					</div>
+					<div class="link-box wow fadeIn" data-wow-duration="1s" data-wow-delay="2s">
+						<a href="javascript:linkToInner('do-future.html');" class="slider-links">查看详情</a>
+					</div>
+				</div>
+
+				<div id="do3" class="project-item-detail">
+					<img class="inner-icon" src="http://yun-image.elab-plus.com/images/do/1_objects@2x_3.png" />
+					<div class="words1 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">为解决传统开发创新风险<br/>创造以需定产的预制开发解决方案</div>
+					<div class="words2 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">ELAB通过独立研发线上交互技术<br/>获得海量、精准、真实、未来的市场数据、客户行为数据等热数据，辅以ELAB自主的ECS产品创新原型库，完成未来人居开发。</div>
+				</div>
+
+				<div id="do4" class="project-item-detail">
+					<img class="inner-icon wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" src="http://yun-image.elab-plus.com/images/do/1_objects@2x_4.png" />
+					<div class="words1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.5s">大麦-智能营销SAAS系统
+						<p>MARKETING</p>
+					</div>
+					<div class="link-box wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s">
+						<a href="javascript:linkToInner('do-damai.html');" class="slider-links">查看详情</a>
+					</div>
+				</div>
+
+				<div id="do5" class="project-item-detail">
+					<img class="inner-icon" src="http://yun-image.elab-plus.com/images/do/1_objects@2x_3.png" />
+					<div class="words1 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">打造全生命周期<br/>地产互联网营销解决方案</div>
+					<div class="words2 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">平均可提高用户转化20%-30%<br/>增加客户量200%-400%<br/>节省营销费用50%</div>
+				</div>
+
+			</div>
+
+			<!--<div class="who-we-are">
+				<p>
+					<a href="licheng.html">我们是谁</a>
+				</p>
+				<div class="slide-line"></div>
+			</div>
+			<div class="what-we-do">
+				<p>
+					<a href="do.html">我们在做什么</a>
+				</p>
+				<div class="slide-line"></div>
+			</div>-->
+
+		</div>
+
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/wow.js"></script>
+		<script>
+			$(function() {
+
+				//show menu
+				$(".menu").on("click", function(e) {
+					$(".main-menu").addClass("active");
+				});
+				//close menu
+				$('.menu-close').on('click', function(e) {
+					$(".main-menu").removeClass("active");
+				});
+
+				//hover style
+				$(".who-we-are").on('mouseover', function(e) {
+					$(".footer .left,#leftWave").addClass("active");
+					$(".who-we-are .slide-line,.who-we-are .slide-line1").addClass("active");
+				});
+				$(".who-we-are").on('mouseout', function(e) {
+					$(".footer .left,#leftWave").removeClass("active");
+					$(".who-we-are .slide-line,.who-we-are .slide-line1").removeClass("active").addClass("fadeInUp");
+
+				});
+
+			});
+
+			function startWow() {
+				//start wow
+				var wow = new WOW({
+					boxClass: 'wow',
+					animateClass: 'animated',
+					offset: 0,
+					mobile: true,
+					live: true
+				});
+				wow.init();
+			}
+
+			function linkToInner(url) {
+				$('html body').fadeOut(500);
+				setTimeout(function() {
+					self.location.href = url;
+				}, 500);
+			}
+		</script>
+
+	</body>
+
+</html>
