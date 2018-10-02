@@ -558,15 +558,12 @@ body {
 	.footer .right {
 		display: none;
 	}
-	#footer-left,#footer-right {
-		display: none;
-	}
-	#cp-mobile {
-		width: 100%;
-		text-align: center;
-		line-height: 140%;
-		visibility: visible;
-	}
+	.mobile-display {
+        visibility: visible !important;
+    }
+    .mobile-hide {
+        display: none !important;
+    }
 }
 
 /*****main for who we are****/
