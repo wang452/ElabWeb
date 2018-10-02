@@ -200,7 +200,7 @@
 							</div>
 						</li>
 						<li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-							<div class="section4_list_box" style="padding-left: 0;">
+							<div class="section4_list_box">
 								<h3 class="h3 tag">11</h3>
 								<p class="p">与路劲集团形成战略合作</p>
 							</div>
@@ -212,7 +212,7 @@
 							</div>
 						</li>
 						<li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-							<div class="section4_list_box" style="padding-left: 0;">
+							<div class="section4_list_box">
 								<h3 class="h3 tag">02</h3>
 								<p class="p">入驻大宁德必易园新办公地点</p>
 							</div>
@@ -241,8 +241,8 @@
 							<p class="p_fir wow">
 							</p>
 							<p class="p_fir p_fir1 wow p_border">
-								<img src="http://yun-image.elab-plus.com/images/Bitmap@2x9.png" alt="" class="wph">
-								<span class="fl">唯品会信息科技有限公司（VIPS）成立于2008年8月，2012年在美国纽约证券交易所（NYSE）上市。目前已成为中国第三大电商。</span>
+								<img id="progressFirstImg" src="http://yun-image.elab-plus.com/images/Bitmap@2x9.png" alt="" class="wph">
+								<span id="progressFirstText" class="fl">唯品会信息科技有限公司（VIPS）成立于2008年8月，2012年在美国纽约证券交易所（NYSE）上市。目前已成为中国第三大电商。</span>
 							</p>
 						</div>
 						<div></div>
@@ -250,7 +250,7 @@
 							<div class="section4_list_box A_plus_invest">
 								<h3 class="h3 tag">05</h3>
 								<p class="p">完成A+轮融资，以3.3亿估值，再获数千万融资额。</p>
-								<p class="p">战略投资方：<span id="A_plus_invest" style="font-weight: bold">顺为资本/唯品基金</span></p>
+								<p class="p">战略投资方：<span id="A_plus_invest_shun" style="font-weight: bold">顺为资本</span>/<span id="A_plus_invest_wph" style="font-weight: bold">唯品基金</span></p>
 							</div>
 						</li>
 					</ul>
@@ -263,8 +263,8 @@
 						</li>
 						<div id="progressSecond" class="progressSecond progress">
 							<p class="p_fir p_border">
-								<img src="http://yun-image.elab-plus.com/images/Bitmap@2x.png" alt="" class="shun">
-								<span class="fl">顺为资本由雷军和许达来先生联合创立，重点关注互联网，高科技行业以及互联网与传统行业结合所带来的变革。已主导投资了超百家创业公司。</span>
+								<img id="progressSecondImg" src="http://yun-image.elab-plus.com/images/Bitmap@2x.png" alt="" class="shun">
+								<span id="progressSecondText" class="fl">顺为资本由雷军和许达来先生联合创立，重点关注互联网，高科技行业以及互联网与传统行业结合所带来的变革。已主导投资了超百家创业公司。</span>
 							</p>
 							<p class="p_fir p_fir1">
 							</p>
@@ -273,7 +273,7 @@
 						<li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
 							<div class="section4_list_box A_invest">
 								<h3 class="h3 tag">10</h3>
-								<p class="p">完成A轮融资，以1.5亿估值，获得数千万融资额。战略投资方：<span id="A_invest" style="font-weight: bold">顺为资本/唯品基金</span></p>
+								<p class="p">完成A轮融资，以1.5亿估值，获得数千万融资额。战略投资方：<span id="A_invest_shun" style="font-weight: bold">顺为资本</span>/<span id="A_invest_wph" style="font-weight: bold">唯品基金</span></p>
 								<p class="p">未来人居1号作品-天空森林城市项目落地重庆</p>
 							</div>
 						</li>
@@ -358,21 +358,48 @@
 			$('.menu_btn').on('click', function(e) {
 				top.closeWho();
 			});
-			$('#A_invest').on('mouseover' , function(e){
+			$('#A_invest_shun').on('mouseover' , function(e){
 				console.log('mouseover');
-					$('#progressSecond').fadeTo('normal' , 1 , callback);
+				$("#progressSecondImg").removeClass('wph');
+				$("#progressSecondImg").addClass('shun');
+				$("#progressSecondImg").attr('src' , 'http://yun-image.elab-plus.com/images/Bitmap@2x.png');
+				$("#progressSecondText").text('顺为资本由雷军和许达来先生联合创立，重点关注互联网，高科技行业以及互联网与传统行业结合所带来的变革。已主导投资了超百家创业公司。');
+				$('#progressSecond').fadeTo('normal' , 1 );
 			});
-			$('#A_invest').on('mouseout' , function(e){
+			$('#A_invest_wph').on('mouseover' , function(e){
+				$("#progressSecondImg").removeClass('shun');
+				$("#progressSecondImg").addClass('wph');
+				$("#progressSecondImg").attr('src' , 'http://yun-image.elab-plus.com/images/Bitmap@2x9.png');
+				$("#progressSecondText").text('唯品会信息科技有限公司（VIPS）成立于2008年8月，2012年在美国纽约证券交易所（NYSE）上市。目前已成为中国第三大电商。');
+				$("#progressSecond").fadeTo('normal' , 1);
+			});
+			$('#A_invest_shun').on('mouseout' , function(e){
 				console.log('mouseout');
 					$('#progressSecond').fadeTo('normal', 0 , callback);
 			});
-			$('#A_plus_invest').on('mouseover' , function(e){
-				console.log('mouseover');
-				$("#progressFirst").fadeTo('normal' , 1 , callback);
-			});
-			$('#A_plus_invest').on('mouseout' , function(e){
+			$('#A_invest_wph').on('mouseout' , function(e){
 				console.log('mouseout');
-				$("#progressFirst").fadeTo('normal' , 0 , callback);
+					$('#progressSecond').fadeTo('normal', 0 , callback);
+			});
+			$('#A_plus_invest_shun').on('mouseover' , function(e){
+				$("#progressFirstImg").removeClass('wph');
+				$("#progressFirstImg").addClass('shun');
+				$("#progressFirstImg").attr('src' , 'http://yun-image.elab-plus.com/images/Bitmap@2x.png');
+				$("#progressFirstText").text('顺为资本由雷军和许达来先生联合创立，重点关注互联网，高科技行业以及互联网与传统行业结合所带来的变革。已主导投资了超百家创业公司。');
+				$("#progressFirst").fadeTo('normal' , 1);
+			});
+			$('#A_plus_invest_wph').on('mouseover' , function(e){
+				$("#progressFirstImg").removeClass('shun');
+				$("#progressFirstImg").addClass('wph');
+				$("#progressFirstImg").attr('src' , 'http://yun-image.elab-plus.com/images/Bitmap@2x9.png');
+				$("#progressFirstText").text('唯品会信息科技有限公司（VIPS）成立于2008年8月，2012年在美国纽约证券交易所（NYSE）上市。目前已成为中国第三大电商。');
+				$("#progressFirst").fadeTo('normal' , 1);
+			});
+			$('#A_plus_invest_shun').on('mouseout' , function(e){
+				$("#progressFirst").fadeTo('normal' , 0 );
+			});
+			$('#A_plus_invest_wph').on('mouseout' , function(e){
+				$("#progressFirst").fadeTo('normal' , 0 );
 			});
 
 			//加载完毕，开始slider
