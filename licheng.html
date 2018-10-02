@@ -43,18 +43,34 @@
 				text-align: center;
 			}
 
-			.hj_box .more1 {
-				position: absolute;
-				z-index: 30;
-				left: calc( ( 100% - 354px) / 2);
-				top: 70%;
-			}
+            .hj_box .more1 {
+                position: absolute;
+                z-index: 30;
+                left: calc(50% - 190px);
+                top: 70%;
+            }
+
             .hj_box .more2 {
-				position: absolute;
-				z-index: 30;
-				left: calc( ( 100% + 84px) / 2);
-				top: 70%;
-			}
+                position: absolute;
+                z-index: 30;
+                left: calc(50% + 30px);
+                top: 70%;
+            }
+            @media(max-width:1024px) {
+                .hj_box .more1 {
+                    position: absolute;
+                    z-index: 30;
+                    left: calc(50% - 2.5rem);
+                    top: 70%;
+                }
+
+                .hj_box .more2 {
+                    position: absolute;
+                    z-index: 30;
+                    left: calc(50% + 0.3rem);
+                    top: 70%;
+                }
+            }
 			body {
 				background: #1e2538;
 			}
@@ -290,6 +306,17 @@
 							</div>
 						</li>
 					</ul>
+                    <div class="progress" id="progreeBtn" hidden>
+                        <!--<img src="http://yun-image.elab-plus.com/images/Line.png" alt="" class="Line wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">-->
+                        <p class="p_fir wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <img src="http://yun-image.elab-plus.com/images/Bitmap@2x.png" alt="" class="shun">
+                            <span class="fl">顺为资本由雷军和许达来先生联合创立，重点关注互联网，高科技行业以及互联网与传统行业结合所带来的变革。已主导投资了超百家创业公司。</span>
+                        </p>
+                        <p class="p_fir p_fir1 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s" style="">
+                            <img src="http://yun-image.elab-plus.com/images/Bitmap@2x9.png" alt="" class="wph">
+                            <span class="fl">唯品会信息科技有限公司（VIPS）成立于2008年8月，2012年在美国纽约证券交易所（NYSE）上市。目前已成为中国第三大电商。</span>
+                        </p>
+                    </div>
 				</div>
                 <p>&nbsp;</p>
 				<a href="javascript:showTimeMore();" id='btnShowTimeMore' class="more wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">查看更多</a>

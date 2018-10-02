@@ -1017,6 +1017,17 @@ body {
 		font-size: .22rem;
 		line-height: 90%;
 	}
+
+
+	.progressFirst {
+		display: none;
+	}
+	.progressSecond {
+		display: none;
+	}
+	#progreeBtn {
+		display: inherit;
+	}
 }
 
 /*****/
