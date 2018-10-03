@@ -228,7 +228,7 @@ body {
 .section4_list li:nth-child(2n+1) .section4_list_box {
 	float: right;
 	text-align: left;
-	padding-left: 32px;
+	padding-left: 36px;
 }
 
 .section4_list li:last-child {
@@ -359,7 +359,7 @@ body {
 
 #section4 ul:nth-child(2n) li:nth-child(2n) .section4_list_box {
 	float: right;
-	padding-left: 32px;
+	padding-left: 36px;
 	text-align: left;
 }
 

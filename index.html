@@ -185,7 +185,19 @@
 
 		<script>
 			//绑定前进后退事件
-			var $_cpage = "index"; //当前页面
+			var $_cpage = "index";
+			// 隐藏地址栏
+//            if(document.documentElement.scrollHeight <= document.documentElement.clientHeight) {
+//                bodyTag = document.getElementsByTagName('body')[0];
+//                bodyTag.style.height = document.documentElement.clientWidth / screen.width * screen.height + 'px';
+//            }
+//            window.onload=function(){
+//                setTimeout(function() {
+//                    window.scrollTo(0, 1)
+//                }, 0);
+//            };
+
+            //当前页面
 			window.onpopstate = function(event) {
 				var $_state = event.state;
 				var $_url = window.location.href;
